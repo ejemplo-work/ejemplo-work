@@ -23,10 +23,10 @@
 
 /* Movimiento lateral del texto izquierdo del navbar*/
 .navbar .navbar-nav .nav-item:first-child {
-    margin-left: 80px; /* Ajusta este valor según tus necesidades */
+    margin-left: 80px; !important; /* Ajusta este valor según tus necesidades */
 }
 
 /* Movimiento lateral del texto derecho del navbar*/
 .navbar .navbar-nav.ml-auto {
-    margin-right: 90px; /* Ajusta este valor según tus necesidades */
+    margin-right: 90px; !important; /* Ajusta este valor según tus necesidades */
 }
