@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+    <title>PKW | Home</title>
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+        
     <style>
         * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
-        html, body {
-            height: 100%;
+        body {
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-attachment: fixed;
+        }
+        #video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
             overflow: hidden;
         }
         video {
-            object-fit: cover;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -20,14 +38,13 @@
             min-height: 100%;
             width: auto;
             height: auto;
-            z-index: -100;
-            transform: translateX(-50%) translateY(-50%);
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <div id="container">
-        <video autoplay loop muted>
+    <div id="video-background">
+        <video playsinline autoplay muted loop>
             <source src="./video/video1.mp4" type="video/mp4">
         </video>
     </div>
