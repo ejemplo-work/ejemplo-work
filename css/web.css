@@ -392,7 +392,34 @@
           background-size: 0, 0, 0, 0;
         }
       }
-    </style><div class="container"><div class="button-container"><div class="custom-button-wrapper"><div class="custom-button" id="video-detach-button" aria-label="Detach button"><div class="custom-button-contents custom-button-image"><div class="image"></div></div><div class="custom-button-contents custom-button-text"></div></div></div><div class="custom-button-wrapper"><div class="custom-button" id="send-by-qrcode-button" aria-label="Send video to phone" disabled=""><div class="custom-button-contents custom-button-image"><div class="image"></div></div><div class="custom-button-contents custom-button-text"></div></div></div><div class="custom-button-wrapper" style="--lucid-label-min-width:47.3247px;"><div class="custom-button" id="lucid-mode-button" aria-label="Lucid Mode Button" disabled=""><div class="custom-button-contents custom-button-image"><div class="image"></div></div><div class="custom-button-contents custom-button-text"></div></div></div></div></div></template></div><div class="hidden" id="qr-host" style="--opera-video-toolbar-button-color-contrasting:hsla(0, 0%, 100%, 1);"><template shadowrootmode="open"><style type="text/css">
+    </style>
+
+<div class="container">
+<div class="button-container">
+<div class="custom-button-wrapper">
+<div class="custom-button" id="video-detach-button" aria-label="Detach button">
+<div class="custom-button-contents custom-button-image">
+<div class="image"></div></div>
+<div class="custom-button-contents custom-button-text"></div></div></div>
+
+<div class="custom-button-wrapper">
+<div class="custom-button" id="send-by-qrcode-button" aria-label="Send video to phone" disabled="">
+<div class="custom-button-contents custom-button-image">
+<div class="image"></div></div>
+<div class="custom-button-contents custom-button-text"></div></div></div>
+<div class="custom-button-wrapper" style="--lucid-label-min-width:47.3247px;">
+<div class="custom-button" id="lucid-mode-button" aria-label="Lucid Mode Button" disabled=""><div class="custom-button-contents custom-button-image">
+<div class="image"></div></div>
+<div class="custom-button-contents custom-button-text"></div>
+</div>
+</div>
+</div>
+</div>
+</template>
+</div>
+
+
+<div class="hidden" id="qr-host" style="--opera-video-toolbar-button-color-contrasting:hsla(0, 0%, 100%, 1);"><template shadowrootmode="open"><style type="text/css">
         :host {
           
       --opera-video-toolbar-button-color: env(-opera-gx-accent-color);
