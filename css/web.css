@@ -1,6 +1,7 @@
 
 
     <div id="detach-button-host" style="--opera-video-toolbar-button-color-contrasting:hsla(0, 0%, 100%, 1); top: 0px; left: 681.5px;">
+
         <template shadowrootmode="open">
             <style type="text/css">
         :host {
@@ -154,7 +155,9 @@
       .button-container.hide {
         visibility: hidden;
       }
-    </style><style type="text/css">
+    </style>
+
+    <style type="text/css">
       .hint {
           background-color: #f7f9fa;
           border: solid 1px #c8cbcc;
@@ -222,21 +225,45 @@
         .hint-close:hover {
           background-image: url(chrome-extension://hhckidpbkbmoeejbddojbdgidalionif/images/close_hover_round.svg);
         }
-    </style><style type="text/css">
+
+
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporción 16:9, también puedes usar otros valores dependiendo de la proporción del vídeo */
+}
+
+.html-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+    </style>
+
+<style type="text/css">
       #video-detach-button .custom-button-image .image {
         background-image: -webkit-image-set(
             url(chrome-extension://hhckidpbkbmoeejbddojbdgidalionif/images/icon_popout_1x.png) 1x,
             url(chrome-extension://hhckidpbkbmoeejbddojbdgidalionif/images/icon_popout_2x.png) 2x
         );
       }
-    </style><style type="text/css">
+    </style>
+
+<style type="text/css">
       #send-by-qrcode-button .custom-button-image .image {
         background-image: -webkit-image-set(
             url(chrome-extension://hhckidpbkbmoeejbddojbdgidalionif/images/video_to_phone.svg) 1x,
             url(chrome-extension://hhckidpbkbmoeejbddojbdgidalionif/images/video_to_phone.svg) 2x
         );
       }
-    </style><style type="text/css">
+    </style>
+
+<style type="text/css">
       .custom-button-wrapper:has(#lucid-mode-button) {
       
       
@@ -574,4 +601,21 @@
          z-index: 1;
          animation-timing-function: cubic-bezier(.75,0,.25,1);
        }
-      </style><div class="qr-cover"><div class="qr-container"><div id="qr-code"><div id="qr-phone-icon"></div><div id="qr-code-internal"></div><div id="scan-line"></div></div><div id="qr-description"><div id="illustration"></div><div id="qr-description-text">Escanea el código QR para seguir viendo el vídeo en el móvil</div></div><div id="feedback-btn">Opinión</div><div id="close-btn"></div></div></div></template></div></html>
+      </style>
+
+<div class="qr-cover"><div class="qr-container"><div id="qr-code">
+
+<div id="qr-phone-icon"></div>
+<div id="qr-code-internal"></div>
+<div id="scan-line"></div></div>
+<div id="qr-description"><div id="illustration"></div>
+<div id="qr-description-text">Escanea el código QR para seguir viendo el vídeo en el móvil</div>
+</div>
+
+<div id="feedback-btn">Opinión</div>
+
+<div id="close-btn"></div>
+</div>
+</div>
+</template>
+</div>
