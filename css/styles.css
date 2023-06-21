@@ -71,3 +71,33 @@ video {
 
 
 
+/* Texto */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+
+/* Texto */
+
+.intro-text {
+    font-family: 'Exo 2', sans-serif;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10%;  /* ajusta este valor según dónde quieras posicionar el texto */
+}
+
+.intro-text p {
+    font-size: 2vw;  /* ajusta este valor para cambiar el tamaño del texto */
+    color: white;  /* cambia este valor para cambiar el color del texto */
+}
+
+@media (max-width: 768px) {
+  .intro-text p {
+    font-size: 20px;  /* ajusta este valor para cambiar el tamaño del texto en dispositivos móviles */
+  }
+
+  .intro-text .mobile-break {
+    display: block;
+  }
+}
+
