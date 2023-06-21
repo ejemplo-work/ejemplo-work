@@ -39,3 +39,23 @@ changeVideo();
 
 // Luego comienza a cambiar los vídeos cada 4 segundos
 let intervalId = setInterval(changeVideo, 4000);
+
+
+//Toggler
+
+let menuOpen = false;  // variable para rastrear si el menú está abierto o no
+
+document.getElementById("navbar-toggler-icon").addEventListener('click', function () {
+    // este es el camino a tus dos imágenes, asegúrate de que son correctos
+    let closedMenuImg = './img/menu.png';
+    let openMenuImg = './img/exit.png';
+
+    if (!menuOpen) {
+        this.src = openMenuImg;
+        menuOpen = true;
+    } else {
+        this.src = closedMenuImg;
+        menuOpen = false;
+    }
+});
+

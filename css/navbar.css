@@ -34,7 +34,7 @@
 .navbar-toggler {
   border-radius: 0 0 10px 0;
   position: absolute;
-  top: -10px; /* Ajusta la posición vertical según tus necesidades */
+  top: -20px; /* Ajusta la posición vertical según tus necesidades */
   right: 10px; /* Ajusta la posición horizontal según tus necesidades */
   transform: none; /* Elimina el translate */
   background-color: transparent;
@@ -42,10 +42,17 @@
   width: 40px; /* Ajusta el ancho según tus necesidades */
 }
 
+/* Quitar el halo naranja que aparece cuando se pulsa el toggler*/
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 
   .navbar-toggler img {
     width: 100%;
     height: auto;
+    max-width: 70px;
   }
 
 }
@@ -61,3 +68,12 @@
     display: none; /* Ocultar el botón en pantallas grandes */
   }
 }
+
+@media (max-width: 768px) {
+  .navbar .navbar-nav .nav-item:first-child,
+  .navbar .navbar-nav.ml-auto .nav-item {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
