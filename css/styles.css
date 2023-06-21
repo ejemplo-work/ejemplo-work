@@ -32,3 +32,41 @@ video {
     transform: translate(-50%, -50%);
 }
 
+/* Cículos */
+
+.circle-container {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+}
+
+.circle .circle-path {
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+    transition: stroke 0.3s ease;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+}
+
+.circle.active .circle-path {
+    animation: draw 4s linear infinite;
+    stroke: #C12924;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 100;
+    }
+}
+
+
+
