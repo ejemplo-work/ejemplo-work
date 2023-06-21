@@ -21,6 +21,7 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+
 video {
     position: absolute;
     top: 50%;
@@ -36,7 +37,7 @@ video {
 
 .circle-container {
     position: fixed;
-    bottom: 30px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

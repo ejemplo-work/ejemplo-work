@@ -1,32 +1,63 @@
-.navbar {
-    font-family: 'Roboto', sans-serif;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 
 .navbar {
-    background: transparent;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
+  font-family: 'Exo 2', sans-serif;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 20px;
 }
+
 .navbar-brand {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Color del texto del navbar */
 .navbar .navbar-nav .nav-link {
-    color: white; /* Cambia el color de los enlaces a blanco */
+  color: white; /* Cambia el color de los enlaces a blanco */
 }
 
-
-/* Movimiento lateral del texto izquierdo del navbar*/
+/* Movimiento lateral del texto izquierdo del navbar */
 .navbar .navbar-nav .nav-item:first-child {
-    margin-left: 80px; !important; /* Ajusta este valor según tus necesidades */
+  margin-left: 80px; /* Ajusta este valor según tus necesidades */
 }
 
-/* Movimiento lateral del texto derecho del navbar*/
+/* Movimiento lateral del texto derecho del navbar */
 .navbar .navbar-nav.ml-auto {
-    margin-right: 90px; !important; /* Ajusta este valor según tus necesidades */
+  margin-right: 90px; /* Ajusta este valor según tus necesidades */
+}
+
+/* Estilos para el botón desplegable en pantallas móviles */
+.navbar-toggler {
+  border-radius: 0 0 10px 0;
+  position: absolute;
+  top: -10px; /* Ajusta la posición vertical según tus necesidades */
+  right: 10px; /* Ajusta la posición horizontal según tus necesidades */
+  transform: none; /* Elimina el translate */
+  background-color: transparent;
+  border: none;
+  width: 40px; /* Ajusta el ancho según tus necesidades */
+}
+
+
+  .navbar-toggler img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  height: 2px;
+  width: 20px;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none; /* Ocultar el botón en pantallas grandes */
+  }
 }
