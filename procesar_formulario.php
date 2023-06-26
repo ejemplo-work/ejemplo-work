@@ -10,7 +10,7 @@ $mensaje = $_POST['msg'];
 // Realizar cualquier validación necesaria aquí
 
 // Enviar el correo electrónico de respuesta
-$to = 'ignacio@pkwdriveclub.com';
+$to = 'ignazziopastore@gmail.com';
 $subject = 'Nuevo mensaje de contacto';
 $message = "Saludo: $saludo\n";
 $message .= "Nombre: $nombre\n";
