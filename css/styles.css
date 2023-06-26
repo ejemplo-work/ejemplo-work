@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     height: 100vh;
     overflow: hidden;
@@ -33,10 +34,6 @@ video {
     transform: translate(-50%, -50%);
 }
 
-/* Video Slider */
-
-
-
 /* Cículos */
 
 .circle-container {
@@ -45,33 +42,48 @@ video {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    align-items: center; /* esto se asegura de que los círculos estén alineados horizontalmente */
     gap: 10px;
 }
 
 .circle {
-    width: 15px;
-    height: 15px;
+    width: 8px; /* tamaño más pequeño para círculos no activos */
+    height: 8px; /* tamaño más pequeño para círculos no activos */
 }
 
 .circle .circle-path {
-    fill: none;
-    stroke: black;
+    fill: white; /* relleno blanco para círculos no activos */
+    stroke: white;
     stroke-width: 2;
-    transition: stroke 0.3s ease;
+    transition: stroke 0.3s ease, fill 0.3s ease, width 0.3s ease, height 0.3s ease;
     stroke-dasharray: 100;
     stroke-dashoffset: 0;
 }
 
+.circle.active {
+    width: 20px; /* tamaño ligeramente reducido para el círculo activo */
+    height: 20px; /* tamaño ligeramente reducido para el círculo activo */
+}
+
 .circle.active .circle-path {
-    animation: draw 4s linear infinite;
+    fill: none; /* no fill for active circle */
     stroke: #C12924;
+    stroke-width: 3; /* grosor reducido para el círculo activo */
+    stroke-dasharray: 0 100;
+    animation: draw 3.8s linear infinite;
 }
 
 @keyframes draw {
     to {
-        stroke-dashoffset: 100;
+        stroke-dasharray: 100 0;
     }
 }
+
+
+/* Resto de tu CSS... */
+
+
+
 
 
 
@@ -103,5 +115,40 @@ video {
   .intro-text .mobile-break {
     display: block;
   }
+}
+
+/* Transicción Logo*/
+
+
+#transition-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    z-index: 1;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    transition: transform 1s ease-in-out;
+    transform: scale(0.5);
+}
+
+#transition-container.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#logo.large {
+    transform: scale(1);
 }
 
