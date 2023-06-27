@@ -35,8 +35,8 @@
 .navbar-toggler {
   border-radius: 0 0 10px 0;
   position: absolute;
-  top: -20px; /* Ajusta la posición vertical según tus necesidades */
-  right: 10px; /* Ajusta la posición horizontal según tus necesidades */
+  top: 0px; /* Ajusta la posición vertical según tus necesidades */
+  right: 30px; /* Ajusta la posición horizontal según tus necesidades */
   transform: none; /* Elimina el translate */
   background-color: transparent;
   border: none;
@@ -61,7 +61,7 @@
 .navbar-toggler-icon {
   background-color: white;
   height: 2px;
-  width: 20px;
+  width: 25px;
 }
 
 @media (min-width: 768px) {
@@ -78,3 +78,40 @@
   }
 }
 
+
+
+/* Bajar el Logo en dispositivos móviles */
+
+@media (max-width: 768px) {
+  .navbar .navbar-nav .nav-item:first-child,
+  .navbar .navbar-nav.ml-auto .nav-item {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Añade esto para mover el logo hacia abajo */
+  .navbar-brand {
+    top: -10px; /* Ajusta este valor para mover el logo arriba/abajo */
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+  }
+}
+
+/* Fin */
+
+/* Toggler Responsive */
+
+@media (min-width: 1300px) {
+  .navbar-toggler {
+    display: none; /* Ocultar el botón en pantallas grandes */
+  }
+}
+
+@media (max-width: 1299px) {
+  .navbar-toggler {
+    display: block; /* Asegurarse de que el botón se muestre en pantallas pequeñas */
+  }
+  
+  /* El resto de tu código */
+}

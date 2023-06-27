@@ -1,9 +1,9 @@
 
 const videos = [
-    './video/video1.mp4',
+    './video/portada.mp4',
     './video/workshop.mp4',
     './video/detailing.mp4',
-    './video/video4.mp4',
+    './video/racing.mp4',
 ];
 
 let currentVideo = 0;
@@ -44,14 +44,14 @@ function selectVideo(index) {
     // No es necesario incrementar currentVideo aquí ya que lo hacemos en changeVideo()
     
     clearInterval(intervalId);  // Para el intervalo de cambio automático
-    intervalId = setInterval(changeVideo, 4000);  // Inicia un nuevo intervalo de cambio automático
+    intervalId = setInterval(changeVideo, 10000);  // Inicia un nuevo intervalo de cambio automático
 }
 
 // Llama a changeVideo una vez para iniciar la reproducción del primer vídeo inmediatamente
 changeVideo();
 
-// Luego comienza a cambiar los vídeos cada 4 segundos
-let intervalId = setInterval(changeVideo, 4000);
+// Luego comienza a cambiar los vídeos cada 10 segundos
+let intervalId = setInterval(changeVideo, 10000);
 
 
 //Toggler

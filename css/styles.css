@@ -70,7 +70,7 @@ video {
     stroke: #C12924;
     stroke-width: 3; /* grosor reducido para el círculo activo */
     stroke-dasharray: 0 100;
-    animation: draw 3.8s linear infinite;
+    animation: draw 9.8s linear infinite;
 }
 
 @keyframes draw {
