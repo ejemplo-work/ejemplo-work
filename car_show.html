@@ -290,22 +290,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <div class="c-product-intro__buttons">
 								<div class="c-button-group">
 									
-            <a href="" id="myButton" class="c-button c-button--primary ">My button</a>
+                                    <a href="#" id="myButton" class="c-button c-button--primary">My Button</a>
 
-                    <script src="//embed.typeform.com/next/embed.js"></script>
+                                    <script src="//embed.typeform.com/next/embed.js"></script>
 
                                     <script>
                                       window.addEventListener('DOMContentLoaded', (event) => {
-                                        const tf = window.tf;
                                         const formId = 'bG4Pf5yh';
-                                        
+
                                         const button = document.getElementById('myButton');
                                         button.addEventListener('click', function (e) {
                                           e.preventDefault();
-                                          tf.form(formId).open();
+                                          
+                                          window.typeformEmbed.makePopup('https://admin.typeform.com/to/' + formId, {
+                                            mode: 'popup',
+                                            autoOpen: true,
+                                            hideHeaders: true,
+                                            hideFooters: true,
+                                            opacity: 100,
+                                          });
                                         });
                                       });
                                     </script>
+
 
 	
 
