@@ -10,7 +10,7 @@
 
 <html lang="en">
  	<head>
-		<title>Home - PKW</title>
+		<title>Haswell - Responsive HTML5 Template</title>
 		<meta charset="utf-8">
 		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 		<meta name="robots" content="index, follow" > 
@@ -27,6 +27,9 @@
     <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
 		
 <!-- CSS -->
+
+    <!-- FLEXSLIDER SLIDER CSS -->
+		<link rel="stylesheet" type="text/css" href="css/flexslider.css"  >
 
     <!-- BOOTSTRAP -->
 		<link rel="stylesheet" href="css/bootstrap.min.css"> 
@@ -72,9 +75,7 @@
     </div>	
 
 		<div id="wrap" class="boxed ">
-			<div class="grey-bg">
-                
-                <!-- Grey BG  -->
+			<div class="grey-bg"> <!-- Grey BG  -->	
 				
 				<!--[if lte IE 8]>
 				<div id="ie-container">
@@ -102,11 +103,10 @@
 					</div>
 				</div>
 				<![endif]-->
-        
-      <div class="header-transporent-bg-black">				
 				
-				<!-- HEADER -->
-				<header id="nav" class="header header-1 black-header">
+				<!-- HEADER 1 NO-TRANSPARENT -->
+				<header id="nav" class="header header-1 no-transparent mobile-no-transparent">
+          
 				  <div class="header-wrapper">
 					<div class="container-m-30 clearfix">
 					  <div class="logo-row">
@@ -115,7 +115,7 @@
 						<div class="logo-container-2">
                 <div class="logo-2">
                   <a href="index.html" class="clearfix">
-                    <img src="images/logo.svg" class="logo-img" alt="Logo">
+                    <img src="images/logo.png" class="logo-img" alt="Logo">
                   </a>
                 </div>
               </div>
@@ -140,11 +140,11 @@
 									<!-- MAIN MENU LIST -->
 									<nav class="collapse collapsing navbar-collapse right-1024">
 									  <ul class="nav navbar-nav">
-                      
+									  
                       <!-- MENU ITEM -->
-                      <li class="parent current">
+                      <li class="parent ">
                         <a href="#"><div class="main-menu-title">HOME</div></a>
-                  <!--      <ul class="sub">
+                        <ul class="sub">
                         <li class="parent">
                           <a href="#">Home - Corporate</a>
                           <ul class="sub">
@@ -214,29 +214,30 @@
 
                       <!-- MENU ITEM -->
                       <li class="parent">
-                        <a href="#"><div class="main-menu-title">EXHIBITION</div></a>
+                        <a href="#"><div class="main-menu-title">SLIDERS</div></a>
                         <ul class="sub">
                         <li class="parent">
                           <a href="#">Revolution Slider</a>
-             <!--             <ul class="sub">
+                          <ul class="sub">
                           <li><a href="index.html">Full Screen</a></li>
                           <li><a href="slider-revo-full-width.html">Full Width</a></li>
                           <li><a href="slider-revo-kenburns.html">Kenburns Effect</a></li>
                           <li><a href="slider-revo-html5-video.html">HTML5 Video</a></li>
                             <li><a href="revo-slider-demo/start-here.html">All Demos <span class="label-new">new</span></a></li>
                           </ul>
-                          -->
                         </li>
+                        
                         <li><a href="slider-flex.html">Flex Slider</a></li>
                         <li class="parent">
-                          <a class="current" href="#" >Static Media</a>
+                          <a href="#" >Static Media</a>
                           <ul class="sub">
                           <li><a href="static-image.html">Image</a></li>
                           <li><a href="static-image-left.html">Image 2 <span class="label-new">new</span></a></li>
                           <li><a href="static-parallax.html">Parallax</a></li>
                           <li><a href="static-parallax2.html">Parallax 2 <span class="label-new">new</span></a></li>
                           <li><a href="static-text-rotator.html">Text Rotator</a></li>
-                          <li><a class="current" href="static-video.html">HTML5 Video</a></li>
+                          
+                          <li><a href="static-video.html">HTML5 Video</a></li>
                           </ul>
                         </li>
                         </ul>
@@ -244,8 +245,8 @@
                       
                       <!-- MEGA MENU ITEM -->
                       <li class="parent megamenu">
-                        <a href="#"><div class="main-menu-title">WORKSHOP</div></a>
-       <!--                 <ul class="sub">
+                        <a href="#"><div class="main-menu-title">PAGES & FEATURES</div></a>
+                        <ul class="sub">
                           <li>
                           
                             <div class="menu-sub-container">
@@ -337,13 +338,12 @@
 
                           </li>
                         </ul>
-       -->
                       </li>					
                       
                       <!-- MENU ITEM -->
-                      <li class="parent">
-                        <a href="#"><div class="main-menu-title">DETAILING</div></a>
-         <!--               <ul class="sub">
+                      <li class="parent current">
+                        <a href="#"><div class="main-menu-title">PORTFOLIO</div></a>
+                        <ul class="sub">
                           <li><a href="portfolio-grid.html">Portfolio Grid</a></li>
                           <li class="parent">
                             <a href="#">Boxed</a>
@@ -390,33 +390,32 @@
                             </ul>
                           </li>
                           <li class="parent">
-                            <a href="#">Portfolio Single</a>
+                            <a class="current" href="#">Portfolio Single</a>
                             <ul class="sub">
                               <li><a href="portfolio-single1.html">Single 1</a></li>
                               <li><a href="portfolio-single2.html">Single 2</a></li>
-                              <li><a href="portfolio-single3.html">Single 3</a></li>
+                              <li><a class="current" href="portfolio-single3.html">Single 3</a></li>
                             </ul>
                           </li>
                         </ul>
-         -->
                       </li>					
                       
                       <!-- MENU ITEM -->
                       <li class="parent">
-                        <a href="#"><div class="main-menu-title">DRIVE CLUB</div></a>
+                        <a href="#"><div class="main-menu-title">BLOG</div></a>
                         <ul class="sub">
                         <li class="parent">
-                          <a href="#">CLUB</a>
-                    <!--      <ul class="sub">
+                          <a href="#">Blog Masonry</a>
+                          <ul class="sub">
                             <li><a href="blog-masonry-2col.html">2 Columns</a></li>
                             <li><a href="blog-masonry-3col.html">3 Columns</a></li>
                             <li><a href="blog-masonry-4col.html">4 Columns</a></li>
-                          </ul> -->
+                          </ul>
                         </li>
                         
                         
-                        <li><a  data-tf-popup="QHZ7hjjC" data-tf-iframe-props="title=Contacto"  data-tf-transitive-search-params data-tf-medium="snippet">Rent a car</a></li>
-            <!--
+                        <li><a href="blog-full-width.html">Blog Full Width</a></li>
+                        
                         <li><a href="blog-small-image.html">Blog Small Image</a></li>
                         <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
                         <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
@@ -429,16 +428,14 @@
                           <li><a href="blog-single-sidebar-left.html">Left Sidebar</a></li>
                           <li><a href="blog-single-fullwidth.html">Fullwidth</a></li>
                           </ul>
-                          -->
                         </li>
                         </ul>
-            
                       </li>	
                       
                       <!-- MENU ITEM -->
                       <li class="parent">
-                        <a href="#"><div class="main-menu-title">RACING</div></a>
-             <!--           <ul class="sub">
+                        <a href="#"><div class="main-menu-title">SHOP</div></a>
+                        <ul class="sub">
                         <li><a href="index-shop.html">Home - Shop</a></li>
                         <li><a href="shop-2-col.html">2 Columns</a></li>
                         <li><a href="shop-3-col.html">3 Columns</a></li>
@@ -446,10 +443,9 @@
                         <li><a href="shop-single.html">Shop Single</a></li>
                         <li><a href="shop-shoping-cart.html">Shoping Cart</a></li>
                         </ul>
-             -->
                       </li>
                       
-                      <!-- MEGA MENU ITEM -S->
+                      <!-- MEGA MENU ITEM -->
                       <li class="parent megamenu">
                         <a href="#"><div class="main-menu-title">SHORTCODES</div></a>
                         <ul class="sub">
@@ -516,7 +512,7 @@
                       
                       <!-- MENU ITEM -->
                       <li id="menu-contact-info-big" class="parent megamenu">
-                        <a href="#"><div class="main-menu-title">CONTACTO</div></a>
+                        <a href="#"><div class="main-menu-title">CONTACT</div></a>
                         <ul class="sub">
                           <li class="clearfix" >
                             <div class="menu-sub-container">
@@ -552,7 +548,7 @@
                                       <span aria-hidden="true" class="icon_mail_alt main-menu-contact-icon"></span>
                                     </div>
                                     <div class="menu-contact-text-container">							
-                                      <a class="a-mail" href="mailto:info@pkwdriveclub.com">info@pkwdriveclub.com</a>
+                                      <a class="a-mail" href="mailto:info@haswell.com">info@haswell.com</a>
                                     </div>	
                                   </li>
                                 </ul>
@@ -599,628 +595,330 @@
 				  <!-- END header-wrapper -->
 				  
 				</header>
-				
-        <!-- STATIC MEDIA IMAGE -->
-   <!--     <div class="sm-video-bg"  > -->
-          <div class="container sm-content-cont text-center js-height-fullscr">
-          
-            <!-- VIDEO BG -->
-            <!-- If you want to change video - replace video files in folder "video" -->
-            <div class="sm-video-wrapper">
-              <div class="sm-video"></div>
-            </div> 
-                     
-            <div class="sm-cont-middle">
 
-						  	<!-- LAYER NR. 1 -->
-						  	<div class="font-white light-72-wide sm-mb-15 sm-mt-20 relative" >
-						       <span class="bold">PKW DRIVE CLUB</span>
-						  	</div>
-
-						  	<!-- LAYER NR. 2 -->
-						  	<div class="font-white norm-16-wide hide-0-736 sm-mb-50 relative">
-                  WORKSHOP<span class="slash-divider-10">/</span>DETAILING<span class="slash-divider-10">/</span>CLUB<span class="slash-divider-10">/</span>RACING
-						  	</div>
-
-						    <!-- LAYER NR. 3 -->
-						  	<div class="center-0-478">
-                  <a class="button medium thin hover-dark tp-button white" href="#">VER MÁS</a>
-                  
-                  <a class="button medium thin hover-dark tp-button white ml-20"
-                      data-tf-popup="QHZ7hjjC" data-tf-iframe-props="title=Contacto"  data-tf-transitive-search-params data-tf-medium="snippet">PIDE CITA</a>
-                  
-                  <script src="//embed.typeform.com/next/embed.js"></script>
-                  
-						  	</div>
-
-            </div>
-          </div>
-          
-          <!-- SCROLL ICON -->
-					<div class="local-scroll-cont font-white">
-						<a href="#footer" class="scroll-down smooth-scroll">
-              <div class="icon icon-arrows-down"></div>
-            </a> 
-					</div>
-        </div>	
-				
-      </div>
-      
-        <!-- FEATURES 5 & TESTIMONIALS 1 -s->
-        <div id="about" class="page-section p-110-cont">
-					<div class="container">
-
+        <!-- PAGE TITLE -->
+        <div class="page-title-cont page-title-big grey-light-bg ">
+          <div class="relative container align-left">
             <div class="row">
-              <!-- TESTIMONIALS -s->
-              <div class="col-md-5 pb-40">
-                <blockquote class="quote mb-0 pr-50-min-1169">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, maiores esse temporibus actium quas soluta quis sed rerum.</p>
-                  <footer>John Doe, Google Inc.</footer>
-                 </blockquote>
-							</div>
-              
-              <!-- FEATURES -s->
-							<div class="col-md-7">
-                    
-                <div class="row">
-                    
-                  <div class="col-md-6 col-sm-6 pb-10">
-                    <div class="fes5-box wow fadeIn" >
-                      <h3>FULLY RESPONSIVE</h3>
-                      <p>Sed ut perspiciatis unde omnis iste nat eror acus  antium que</p>
-                    </div>
-                  </div>
-                      
-                  <div class="col-md-6 col-sm-6 pb-10">
-                    <div class="fes5-box wow fadeIn" data-wow-delay="200ms">
-                      <h3>RETINA READY</h3>
-                      <p>Sed ut perspiciatis unde omnis iste nat eror acus  antium que</p>
-                    </div>
-                  </div>
-                      
-                </div>
-                    
-                <div class="row">
-                    
-                  <div class="col-md-6 col-sm-6 pb-10">
-                    <div class="fes5-box wow fadeIn" data-wow-delay="400ms">
-                      <h3>UNIQUE DESIGN</h3>
-                      <p>Sed ut perspiciatis unde omnis iste nat eror acus  antium que</p>
-                    </div>
-                  </div>
-                      
-                  <div class="col-md-6 col-sm-6 pb-10">
-                    <div class="fes5-box wow fadeIn"  data-wow-delay="600ms">
-                      <h3>EASY TO CUSTOMIZE</h3>
-                      <p>Sed ut perspiciatis unde omnis iste nat eror acus  antium que</p>
-                    </div>
-                  </div>
-                  
-                </div>                    
-                    
-							</div>
-              
-						</div>
-					</div>
-				</div>
-
-        <!-- FEATURES 7 -s->
-        <div class="page-section grey-light-bg clearfix">
-          <div class="fes7-img-cont col-md-5">
-            <div class="fes7-img"  style="background-image: url(images/fes7.jpg)" ></div>
-          </div>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
-                <h1><span class="font-light">Nulla varius faucibus vestibulum. Sed imperdiet, tellus at iaculis</span></h1>
-                <p class="mb-60">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                </p>
-              
-                <div class="row">
-                    
-                  <div class="col-md-6 col-sm-6">
-                    <div class="fes7-box wow fadeIn" >
-                      <div class="fes7-box-icon">
-                        <div class="icon icon-ecommerce-graph-increase"></div>
-                      </div>
-                      <h3>SEO Friendly</h3>
-                      <p>Sed ut perspiciatis unde omnis iste nat eror acus  antium que</p>
-                    </div>
-                  </div>
-                      
-                  <div class="col-md-6 col-sm-6">
-                    <div class="fes7-box wow fadeIn" data-wow-delay="200ms">
-                      <div class="fes7-box-icon">
-                        <div class="icon icon-software-font-smallcaps"></div>
-                      </div>
-                      <h3>Google Fonts</h3>
-                      <p>Sed ut perspiciatis unde omnis iste nat eror acus  antium que</p>
-                    </div>
-                  </div>
-                      
-                </div>
-                    
-                <div class="row">
-                    
-                  <div class="col-md-6 col-sm-6">
-                    <div class="fes7-box wow fadeIn" data-wow-delay="400ms">
-                      <div class="fes7-box-icon">
-                        <div class="icon icon-basic-mixer2"></div>
-                      </div>
-                      <h3>Tons of Shortcodes</h3>
-                      <p>Sed ut perspiciatis unde omnis iste nat eror acus  antium que</p>
-                    </div>
-                  </div>
-                      
-                  <div class="col-md-6 col-sm-6">
-                    <div class="fes7-box wow fadeIn"  data-wow-delay="600ms">
-                      <div class="fes7-box-icon">
-                        <div class="icon icon-basic-bolt"></div>
-                      </div>
-                      <h3>1500+ Icons</h3>
-                      <p>Sed ut perspiciatis unde omnis iste nat eror acus  antium que</p>
-                    </div>
-                  </div>
-                  
-                </div> 
-            
-              </div>
-            </div><!--end of row-->
-          </div>
-        </div>        
- 
-				<!-- FEATURES 8 -s->
-				<div class="page-section fes4-cont">
-					<div class="container">
-            <div class="row">
-           
-							<div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes8-box wow fadeIn">
-								  <div class="fes8-title-cont" >
-								  	<div class="fes8-box-icon">
-								  		<div class="icon icon-basic-smartphone"></div>
-								  	</div>
-								  	<h3>RETINA READY GRAPHICS</h3>
-								  </div>
-								  <div>
-								     Maecenas luctus nisi in sem fermentum blat. In nec  elit solliudin, elementum. 
-								  </div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes8-box wow fadeIn" data-wow-delay="200ms">
-								  <div class="fes8-title-cont" >
-								  	<div class="fes8-box-icon">
-								  		<div class="icon icon-basic-mixer2"></div>
-								  	</div>
-								  	<h3>PARALLAX SUPPORT</h3>
-								  </div>
-								  <div>
-								     Maecenas luctus nisi in sem fermentum blat. In nec  elit solliudin, elementum. 
-								  </div>
-								</div>
-							</div>
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes8-box wow fadeIn" data-wow-delay="400ms">
-								  <div class="fes8-title-cont" >
-								  	<div class="fes8-box-icon">
-								  		<div class="icon icon-basic-share"></div>
-								  	</div>
-								  	<h3>ENDLESS POSSIBILITIES</h3>
-								  </div>
-								  <div>
-								     Seductio maesto nisi in sem fermentum blat. In nec elit solliudin, elementum.
-								  </div>
-								</div>
-							</div>
-              
-						</div>
-						<div class="row">
-            
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes8-box wow fadeIn" data-wow-delay="600ms">
-								  <div class="fes8-title-cont" >
-								  	<div class="fes8-box-icon">
-								  		<div class="icon icon-basic-paperplane"></div>
-								  	</div>
-								  	<h3>CLEAR DESIGN</h3>
-								  </div>
-								  <div>
-								    Donec vel luctus nisi in sem fermentum blat. In nec elit solliudin, elementum.
-								  </div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes8-box wow fadeIn" data-wow-delay="800ms" >
-								  <div class="fes8-title-cont" >
-								  	<div class="fes8-box-icon">
-								  		<div class="icon icon-basic-chronometer"></div>
-								  	</div>
-								  	<h3>POWERFUL PERFORMANCE</h3>
-								  </div>
-								  <div>
-								    Lorem luctus antena at nisi in sem blandit. In nec elit soltudin, elementum odio. 
-								  </div>
-								</div>
-							</div>
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes8-box wow fadeIn" data-wow-delay="1000ms">
-								  <div class="fes8-title-cont" >
-								  	<div class="fes8-box-icon">
-								  		<div class="icon icon-software-horizontal-align-center"></div>
-								  	</div>
-								  	<h3>FLEXIBLE WIDGETS</h3>
-								  </div>
-								  <div>
-								    Fermentum nisi in sem fertum blat. In elit soldin, elemtum, arenam pur quam volut.
-								  </div>
-								</div>
-							</div>              
-						
-            </div>
-            
-						<div class="row">
-            
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes8-box wow fadeIn" data-wow-delay="600ms">
-								  <div class="fes8-title-cont" >
-								  	<div class="fes8-box-icon">
-								  		<div class="icon icon-basic-laptop"></div>
-								  	</div>
-								  	<h3>RESPONSIVE LAYOUT</h3>
-								  </div>
-								  <div>
-								    Donec vel luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-								  </div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes8-box wow fadeIn" data-wow-delay="800ms" >
-								  <div class="fes8-title-cont" >
-								  	<div class="fes8-box-icon">
-								  		<div class="icon icon-music-play-button"></div>
-								  	</div>
-								  	<h3>HTML5 VIDEO</h3>
-								  </div>
-								  <div>
-								    Lorem luctus antena at nisi in sem blandit. In nec elit soltudin, elementum odio et, dictum quam a volutpat elementum. 
-								  </div>
-								</div>
-							</div>
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes8-box wow fadeIn" data-wow-delay="1000ms">
-								  <div class="fes8-title-cont" >
-								  	<div class="fes8-box-icon">
-								  		<div class="icon icon-basic-info"></div>
-								  	</div>
-								  	<h3>WELL DOCUMENTED</h3>
-								  </div>
-								  <div>
-								    Fermentum nisi in sem fertum blat. In elit soldin, elemtum, arenam pur quam volutpat suscipit dictum pur quam.
-								  </div>
-								</div>
-							</div>              
-						
-            </div>
-					</div>
-				</div>
-        
-        <!-- COUNTERS 1 -s->
-        <div id="counter-1" class="page-section p-80-cont grey-light-bg">
-          <div class="container">
-        
-            <div  class="row text-center">
-                            
-              <!-- Item -s->
-              <div class="col-xs-6 col-sm-3">
-                <div class="count-number">
-                  75
-                </div>
-                <div class="count-descr">
-                  <span class="count-title">AWARDS WINNING</span>
+               
+              <div class="col-md-8">
+                <h1 class="page-title">SINGLE PROJECT</h1>
+                <div class="page-sub-title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </div>
               </div>
-              
-              <!-- Item -s->
-              <div class="col-xs-6 col-sm-3">
-                <div class="count-number">
-                 450
-                </div>
-                <div class="count-descr">
-                  <span class="count-title">HAPPY CLIENTS</span>
+               
+              <div class="col-md-4">
+                <div class="breadcrumbs">
+                  <a href="index.html">Home</a><span class="slash-divider">/</span><a href="#">PORTFOLIO</a><span class="slash-divider">/</span><span class="bread-current">SINGLE</span>
                 </div>
               </div>
-              
-              <!-- Item -s->
-              <div class="col-xs-6 col-sm-3">
-                <div class="count-number">
-                  151
-                </div>
-                <div class="count-descr">
-                  <span class="count-title">PROJECTS DONE</span>
-                </div>
-              </div>
-              
-              <!-- Item -s->
-              <div class="col-xs-6 col-sm-3">
-                <div class="count-number">
-                 768
-                </div>
-                <div class="count-descr">
-                  <span class="count-title">HOURS OF CODE</span>
-                </div>
-              </div>  
               
             </div>
           </div>
         </div>
         
-				<!-- WORK PROCESS 1 -s->
-				<div class="page-section" >
-					<div class="container fes4-cont">
-						<div class="row">
-							
-							<div class="col-md-4 ">
-								<div class="mb-50">
-								  <h2 class="section-title">WORK <span class="bold">PROCESS</span></h2>
-								</div>
-                <p class="mb-50 " >Sed ut perspiciatis unde omnis iste nat eror acus  antium que</p>
-							</div>
-							<div class="col-md-7 col-lg-offset-1">
-                <div class="row">
-                
-                  <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="fes4-box">
-                      <div class="fes4-title-cont" >
-                        <div class="fes4-box-icon">
-                          <div class="icon icon-basic-lightbulb"></div>
-                        </div>
-                        <h3><span class="bold">PLANING</span></h3>
-                        <p>LOREM IPSUM DOLOR</p>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="fes4-box" >
-                      <div class="fes4-title-cont" >
-                        <div class="fes4-box-icon">
-                          <div class="icon icon-basic-gear"></div>
-                        </div>
-                        <h3><span class="bold">DEVELOPMENT</span></h3>
-                        <p>LOREM IPSUM DOLOR</p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                
-                <div class="row">
-                
-                  <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="fes4-box" >
-                      <div class="fes4-title-cont" >
-                        <div class="fes4-box-icon">
-                          <div class="icon icon-basic-laptop"></div>
-                        </div>
-                        <h3><span class="bold">DESIGNING</span></h3>
-                        <p>LOREM IPSUM DOLOR</p>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="fes4-box" >
-                      <div class="fes4-title-cont" >
-                        <div class="fes4-box-icon">
-                          <div class="icon icon-basic-paperplane"></div>
-                        </div>
-                        <h3><span class="bold">LAUNCH</span></h3>
-                        <p>LOREM IPSUM DOLOR</p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-							</div>
-						</div>
-					</div>
-				</div>        
-
-        <!-- VIDEO ADS 1 -s->
-				<div class="page-section video-ads-bg" >
-					<div class="container">
-            <div class="video-ads-text-cont clearfix">
-              <span class="video-ads-text">BE CREATIVE</span>
-              <span class="video-ads-a">
-                <a class="popup-youtube" href="https://www.youtube.com/watch?v=0gv7OC9L2s8">
-                  <span class="icon icon-music-play-button"></span>
-                </a>
-              </span>
-              <span class="video-ads-text">WITH HASWELL</span>
-            </div>
-					</div>
-				</div>
-        
-        <!-- FEATURES 9 -s->
-        <div class="page-section p-80-cont">
-        
+        <!-- COTENT CONTAINER -->
+        <div class="p-140-cont">
+          <!-- PORTFOLIO INFO -->
           <div class="container">
             <div class="row">
+        
+              <!-- SIDEBAR -->
+              <div class="col-sm-4 col-md-3"> 
+                <!-- PROJECT DETAIL -->
+                <div class="port-detail-cont mb-30">
+                  <h4 class="blog-page-title mt-0 mb-20">PROJECT DETAILS</h4>
+                  <div class="port-detail">
+                    <p>
+                      <strong>CLIENT:</strong>
+                        ENVATO
+                    </p>
+                    <p>
+                      <strong>DATE:</strong>
+                        10 OCTOBER, 2016
+                    </p>
+                    <p>
+                      <strong>CATEGORY:</strong>
+                        <a href="#">DESIGN</a>, <a href="#">PHOTO</a>
+                    </p>
+                    <p>
+                      <strong>ONLINE:</strong>
+                      <a href="https://1.envato.market/a1gQR" target="_blank">WWW.ABC-STUDIO.COM</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- CONTENT -->
+              <div class="col-sm-8 col-md-offset-1 ">
+                <div class="lightbox-item popup-gallery mb-30">
+                  <a href="images/blog/post-wide-1.jpg">
+                    <div class="port-img-overlay">
+                      <img class="port-main-img" src="images/blog/post-wide-1.jpg" alt="img">
+                    </div>
+                    <div class="port-overlay-cont">
+                      <div class="port-btn-cont">
+                        <div aria-hidden="true" class="icon_search"></div>
+                      </div>
+                    </div>
+                  </a>  
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="container">
+          	<div class="row mt-30 mb-60 ">
+            
+              <div class="popup-gallery">
+              
+                <!-- IMG -->
+                <div class="col-sm-3 col-xs-6 mb-20">
+                  <div class="lightbox-item">
+                    <a href="images/blog/post-wide-2.jpg">
+                      <div class="port-img-overlay">
+                        <img class="port-main-img" src="images/blog/post-wide-2.jpg" alt="img">
+                      </div>
+                      <div class="port-overlay-cont">
+                        <div class="port-btn-cont">
+                          <div aria-hidden="true" class="icon_search"></div>
+                        </div>
+                      </div>
+                    </a>  
+                  </div>
+                </div>
+                
+                <!-- IMG -->
+                <div class="col-sm-3 col-xs-6 mb-20">
+                  <div class="lightbox-item">
+                    <a href="images/blog/post-wide-3.jpg">
+                      <div class="port-img-overlay">
+                        <img class="port-main-img" src="images/blog/post-wide-3.jpg" alt="img">
+                      </div>
+                      <div class="port-overlay-cont">
+                        <div class="port-btn-cont">
+                          <div aria-hidden="true" class="icon_search"></div>
+                        </div>
+                      </div>
+                    </a>  
+                  </div>
+                </div>
+                
+                <!-- IMG -->
+                <div class="col-sm-3 col-xs-6 mb-20">
+                  <div class="lightbox-item">
+                    <a href="images/blog/post-wide-4.jpg">
+                      <div class="port-img-overlay">
+                        <img class="port-main-img" src="images/blog/post-wide-4.jpg" alt="img">
+                      </div>
+                      <div class="port-overlay-cont">
+                        <div class="port-btn-cont">
+                          <div aria-hidden="true" class="icon_search"></div>
+                        </div>
+                      </div>
+                    </a>  
+                  </div>
+                </div>
+                
+                <!-- IMG -->
+                <div class="col-sm-3 col-xs-6 mb-20">
+                  <div class="lightbox-item">
+                    <a href="images/blog/post-wide-5.jpg">
+                      <div class="port-img-overlay">
+                        <img class="port-main-img" src="images/blog/post-wide-5.jpg" alt="img">
+                      </div>
+                      <div class="port-overlay-cont">
+                        <div class="port-btn-cont">
+                          <div aria-hidden="true" class="icon_search"></div>
+                        </div>
+                      </div>
+                    </a>  
+                  </div>
+                </div>
+                
+              </div>
+
+          	</div>
+          </div>
+
+          
+          <!-- DIVIDER -->
+          <hr class="mt-0 mb-0"> 
+          
+          <div class="container">
+            <div class="row p-80-cont">
+                <div class="col-md-12">
+                  <h4 class="blog-page-title mt-0 mb-20">PROJECT DESCRIPTION</h4>
+                </div>
               <div class="col-md-6">
-                <div class="mt-60 mb-80">
-                  <h2 class="section-title">DO YOU WANT<br> TO CREATE A GOOD<br><span class="bold">WEBSITE</span>?</h2>
-                </div>
-                <div class="row">
-                        
-                      <div class="col-md-6 col-sm-6">
-                        <div class="fes7-box mb-20 wow fadeIn" >
-                          <div class="fes7-box-icon">
-                            <div class="icon icon-basic-mixer2"></div>
-                          </div>
-                          <h3>FULLY RESPONSIVE</h3>
-                          
-                        </div>
-                      </div>
-                          
-                      <div class="col-md-6 col-sm-6">
-                        <div class="fes7-box mb-20 wow fadeIn" data-wow-delay="200ms">
-                          <div class="fes7-box-icon">
-                            <div class="icon icon-basic-lightbulb"></div>
-                          </div>
-                          <h3>RETINA READY</h3>
-                          
-                        </div>
-                      </div>
-                          
-                    </div>
-                        
-                <div class="row">
-                        
-                  <div class="col-md-6 col-sm-6">
-                    <div class="fes7-box mb-20 wow fadeIn" data-wow-delay="400ms">
-                      <div class="fes7-box-icon">
-                        <div class="icon icon-basic-helm"></div>
-                      </div>
-                      <h3>UNIQUE DESIGN</h3>
-                      
-                    </div>
-                  </div>
-                          
-                  <div class="col-md-6 col-sm-6">
-                    <div class="fes7-box mb-20 wow fadeIn"  data-wow-delay="600ms">
-                      <div class="fes7-box-icon">
-                        <div class="icon icon-basic-settings"></div>
-                      </div>
-                      <h3>EASY TO CUSTOMIZE</h3>
-                     
-                    </div>
-                  </div>
-                      
-                </div>            
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quis molestiae quia iusto quae commodi ad totam ratione porro nisi nesciunt ipsum amet dolores delectus esse modi maiores laborum veniam!</p>
               </div>
-            
-              <div class="col-md-6 fes9-img-cont clearfix">
-                <div class="fes9-img-center clearfix">
-                  <div class="fes9-img-center">
-                    <img src="images/fes9-black.png" alt="img" class="wow fadeInUp" data-wow-delay="150ms" data-wow-duration="1s">
-                    <img src="images/fes9-white.png" alt="img" class=" wow fadeInUp" data-wow-delay="450ms" data-wow-duration="1s">
-                  </div>
-                </div>
+              <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quis molestiae quia iusto quae commodi ad totam ratione porro nisi nesciunt ipsum amet dolores delectus esse modi maiores laborum veniam!</p>
               </div>
-            
+              
             </div>
           </div>
-        </div>
-        
-        <!-- CALL TO ACTION  -s->
-        <div class="port-view-more-cont-dark">
-          <a class="port-view-more-dark " href="contact.html">LET'S WORK TOGETHER</a>
-        </div>
 
-        <!-- BLOG 2 -s->
-        <div class="page-section pt-110-b-30-cont">
-          <div class="container">
-                
-            <div class="mb-50">
-              <h2 class="section-title pr-0">LATEST <span class="bold">NEWS</span><a href="blog-right-sidebar.html" class="section-more right">OUR BLOG</a>
-                  </h2>
-            </div>
+          <!-- CAROUSEL -->
+          <div class="container mb-140">
             
-            <div class="row">
+            <div class="fullwidth-slider owl-carousel owl-arrows-bg owl-dark-bg owl-pag-2" >
               
-              <!-- Post Item 1 -s->
-              <div class="col-md-12 wow fadeIn pb-30" >
-                <div class="row">
-                
-                  <div class="col-md-4 blog2-post-title-cont">
-                    <div class="post-prev-date-cont">
-                      <span class="blog2-date-numb">21</span><span class="blog2-month">October</span>
-                    </div>
-                    <div class="post-prev-title">
-                      <h3><a href="blog-single-sidebar-right.html">TIME FOR MINIMALISM</a></h3>
-                      <div class="post-prev-info">
-                        <a href="#">DESIGN</a><span class="slash-divider">/</span><a href="https://1.envato.market/a1gQR">JOHN DOE</a>
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="col-md-8">
-                    <div class="blog2-post-prev-text">                     
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi modi cupiditate ipsam molestiae eveniet incidunt nostrum atque alias dicta? Quos, quisquam iusto numquam dicta vel voluptatem aperiam voluptas similique!                      
-                    </div>
-                  </div>
-                  
+              <!-- ITEM -->		
+              <div class="item m-0">	
+                <div>
+                  <img alt="about us" src="images/blog/post-wide-1.jpg">
                 </div>
               </div>
-              
-              <!-- Post Item 2 -s->
-              <div class="col-md-12 wow fadeIn pb-30" >
-                <div class="row">
-                
-                  <div class="col-md-4 blog2-post-title-cont">
-                    <div class="post-prev-date-cont">
-                      <span class="blog2-date-numb">17</span><span class="blog2-month">August</span>
-                    </div>
-                    <div class="post-prev-title">
-                      <h3><a href="blog-single-sidebar-right.html">NEW TRENDS IN WEB</a></h3>
-                      <div class="post-prev-info">
-                        <a href="#">DESIGN</a><span class="slash-divider">/</span><a href="https://1.envato.market/a1gQR">JOHN DOE</a>
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="col-md-8">
-                    <div class="blog2-post-prev-text">                     
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi modi cupiditate ipsam molestiae eveniet incidunt nostrum atque alias dicta? Quos, quisquam iusto numquam dicta vel voluptatem aperiam voluptas similique!                      
-                    </div>
-                  </div>
                   
+              <!-- ITEM -->		
+              <div class="item m-0">	
+                <div>
+                  <img alt="about us" src="images/blog/post-wide-2.jpg">
                 </div>
               </div>
 
-              <!-- Post Item 3 -s->
-              <div class="col-md-12 wow fadeIn pb-30" >
-                <div class="row">
-                
-                  <div class="col-md-4 blog2-post-title-cont">
-                    <div class="post-prev-date-cont">
-                      <span class="blog2-date-numb">1</span><span class="blog2-month">August</span>
-                    </div>
-                    <div class="post-prev-title">
-                      <h3><a href="blog-single-sidebar-right.html">THE SOUND OF LIFE</a></h3>
-                      <div class="post-prev-info">
-                        <a href="#">DESIGN</a><span class="slash-divider">/</span><a href="https://1.envato.market/a1gQR">JOHN DOE</a>
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="col-md-8">
-                    <div class="blog2-post-prev-text">                     
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi modi cupiditate ipsam molestiae eveniet incidunt nostrum atque alias dicta? Quos, quisquam iusto numquam dicta vel voluptatem aperiam voluptas similique!                      
-                    </div>
-                  </div>
-                  
+              <!-- ITEM -->		
+              <div class="item m-0">	
+                <div>
+                  <img alt="about us" src="images/blog/post-wide-5.jpg">
                 </div>
               </div>
-
+                  
             </div>
             
           </div>
+           
+          <!-- VIDEO ADS 1 -->
+          <div class="page-section video-ads-bg" >
+            <div class="container">
+              <div class="video-ads-text-cont clearfix">
+                <span class="video-ads-text">BE CREATIVE</span>
+                <span class="video-ads-a">
+                  <a class="popup-youtube" href="https://www.youtube.com/watch?v=0gv7OC9L2s8">
+                    <span class="icon icon-music-play-button"></span>
+                  </a>
+                </span>
+                <span class="video-ads-text">WITH HASWELL</span>
+              </div>
+            </div>
+          </div> 
+
+          <!-- RELATED PORT ITEMS -->
+          <div class="page-section mt-80 mb-0" >
+            <div class="container">
+            
+              <h4 class="blog-page-title mt-0 mb-40">RELATED PROJECTS</h4>
+              <ul class="port-grid display-hover-on-mobile port-grid-gut clearfix" id="items-grid" style="position: relative; height: 564px;">
+                
+                <!-- Item 1 -->
+                <li role="button" class="port-item mix development" style="position: absolute; left: 0px; top: 0px;">
+                  <a href="portfolio-single1.html">
+                    <div class="port-img-overlay"><img class="port-main-img" src="images/portfolio/projects-5.jpg" alt="img"></div>
+                  </a>
+                  <div class="port-overlay-cont">
+
+                      <div class="port-title-cont">
+                        <h3><a href="portfolio-single1.html">MINIMALISM BOOKS</a></h3>
+                        <span><a href="#">ui elements</a><span class="slash-divider">/</span><a href="#">media</a></span>
+                      </div>
+                      <div class="port-btn-cont">
+                        <a href="images/portfolio/projects-5.jpg" class="lightbox mr-20"><div aria-hidden="true" class="icon_search"></div></a>
+                        <a href="portfolio-single1.html"><div aria-hidden="true" class="icon_link"></div></a>
+                      </div>
+
+                  </div>
+                </li>
+
+                <!-- Item 2 -->
+                <li role="button" class="port-item mix design" style="position: absolute; left: 287px; top: 0px;">
+                  <a href="portfolio-single1.html">
+                    <div class="port-img-overlay">
+                      <img class="port-main-img" src="images/portfolio/projects-3.jpg" alt="img">
+                    </div>
+                  </a>
+                  <div class="port-overlay-cont">
+
+                      <div class="port-title-cont">
+                        <h3><a href="portfolio-single1.html">CALENDAR</a></h3>
+                        <span><a href="#">photography</a><span class="slash-divider">/</span><a href="#">media</a></span>
+                      </div>
+                      <div class="port-btn-cont">
+                        <a href="images/portfolio/projects-3.jpg" class="lightbox mr-20"><div aria-hidden="true" class="icon_search"></div></a>
+                        <a href="portfolio-single1.html"><div aria-hidden="true" class="icon_link"></div></a>
+                      </div>
+
+                  </div>
+                </li>
+                
+                <!-- Item 3 -->
+                <li role="button" class="port-item mix photography" style="position: absolute; left: 575px; top: 0px;">
+                  <a href="portfolio-single1.html">
+                    <div class="port-img-overlay">
+                      <img class="port-main-img" src="images/portfolio/projects-1.jpg" alt="img">
+                    </div>
+                  </a>
+                  <div class="port-overlay-cont">
+
+                      <div class="port-title-cont">
+                        <h3><a href="portfolio-single1.html">EYES OF THE CAR</a></h3>
+                        <span><a href="#">branding</a><span class="slash-divider">/</span><a href="#">marketing</a></span>
+                      </div>
+                      <div class="port-btn-cont">
+                        <a href="images/portfolio/projects-1.jpg" class="lightbox mr-20"><div aria-hidden="true" class="icon_search"></div></a>
+                        <a href="portfolio-single1.html"><div aria-hidden="true" class="icon_link"></div></a>
+                      </div>
+
+                  </div>
+                </li>
+                
+                <!-- Item 4 -->
+                <li role="button" class="port-item mix development" style="position: absolute; left: 862px; top: 0px;">
+                  <a href="portfolio-single1.html">
+                    <div class="port-img-overlay">
+                      <img class="port-main-img" src="images/portfolio/projects-6.jpg" alt="img">
+                    </div>
+                  </a>
+                  <div class="port-overlay-cont">
+
+                      <div class="port-title-cont">
+                        <h3><a href="portfolio-single1.html">NOW IS NOW</a></h3>
+                        <span><a href="#">design</a><span class="slash-divider">/</span><a href="#">photography</a></span>
+                      </div>
+                      <div class="port-btn-cont">
+                        <a href="images/portfolio/projects-6.jpg" class="lightbox mr-20"><div aria-hidden="true" class="icon_search"></div></a>
+                        <a href="portfolio-single1.html"><div aria-hidden="true" class="icon_link"></div></a>
+                      </div>
+
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+	      
+        <!-- DIVIDER -->
+        <hr class="mt-0 mb-0">
+        
+        <!-- WORK NAVIGATION -->
+        <div class="work-navigation plr-10 clearfix">
+          <a href="#" class="work-prev"><span><span class="icon icon-arrows-left"></span>&nbsp;Prev</span></a>
+          <a href="portfolio-wide-4col.html" class="work-all" title="View all"><span class="icon icon-arrows-squares"></span></a>
+          <a href="#" class="work-next"><span>Next&nbsp;<span class="icon icon-arrows-right"></span></span></a>
         </div>
         
-        <!-- NEWS LETTER -s->
+        <!-- NEWS LETTER -->
         <div class="page-section nl-cont">
           <div class="container">
             <div class="relative" >
               <div id="mc_embed_signup" class="nl-form-container clearfix">
-                <form action="http://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform validate" target="_blank" novalidate>   <!-- EDIT THIS ACTION URL (add "post-json?u" instead of "post?u" and appended "&amp;c=?" to the end of this URL) -s->
+                <form action="http://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform validate" target="_blank" novalidate>   <!-- EDIT THIS ACTION URL (add "post-json?u" instead of "post?u" and appended "&amp;c=?" to the end of this URL) -->
                   <input type="email" value="" name="EMAIL" class="email nl-email-input" id="mce-EMAIL" placeholder="Enter your email" required>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-s->
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                   <div style="position: absolute; left: -5000px;"><input type="text" name="b_ba37086d08bdc9f56f3592af0_e38247f7cc" tabindex="-1" value=""></div>
           
                   <input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button medium gray">
@@ -1232,56 +930,57 @@
         </div>
 
         <!-- FOOTER 2 -->
-        <footer id="footer" class="page-section pt-80 pb-50">
+        <footer class="page-section pt-80 pb-50">
           <div class="container">
             <div class="row">
             
               <div class="col-md-3 col-sm-3 widget">
                 <div class="logo-footer-cont">
                   <a href="index.html">
-                    <img class="logo-footer" src="images/logo-negro.png" alt="logo">
+                    <img class="logo-footer" src="images/logo-footer.png" alt="logo">
                   </a>
                 </div>
                 <div class="footer-2-text-cont">
                   <address>
-                      C/ Víctor de la Serna, 12 <br>
-                      28016 Madrid. España.
+                    555 California str, Suite 100<br>
+                    San&nbsp;Francisco, CA 94107
                   </address>
                 </div>
                 <div class="footer-2-text-cont">
-                    PKW Italien, S.L.
+                  1-800-312-2121<br>
+                  1-800-310-1010
                 </div>
                 <div class="footer-2-text-cont">
-                  <a class="a-text" href="mailto:info@pkwdriveclub.com">info@pkwdriveclub.com</a>
+                  <a class="a-text" href="mailto:info@haswell.com">info@haswell.com</a>
                 </div>
               </div>
               
               <div class="col-md-3 col-sm-3 widget">
                 <h4>NAVIGATE</h4>
                 <ul class="links-list bold a-text-cont">
-     <!--             <li><a href="#">HOME</a></li> -->
-                  <li><a href="#">EXHIBITION</a></li>
-                  <li><a href="#">WORKSHOP</a></li>
-                  <li><a href="#">DETAILING</a></li>
-                  <li><a href="#">DRIVE CLUB</a></li>
-                  <li><a href="#">RACING</a></li>
-      <!--            <li><a href="#">CONTACTO</a></li> -->
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="grid-system.html">GRID SYSTEM</a></li>
+                  <li><a href="services.html">SERVICES</a></li>
+                  <li><a href="index-portfolio.html">PORTFOLIO</a></li>
+                  <li><a href="index-blog.html">BLOG</a></li>
+                  <li><a href="index-shop.html">SHOP</a></li>
+                  <li><a href="intro.html">PAGES</a></li>
                 </ul>
               </div>
               
               <div class="col-md-3 col-sm-3 widget">
-                <h4>SOBRE NOSOTROS</h4>
+                <h4>ABOUT US</h4>
                 <ul class="links-list a-text-cont" >
-                  <li><a href="about-us.html">EMPRESA</a></li>
-                  <li><a href="services.html">QUÉ HACEMOS</a></li>
+                  <li><a href="about-us.html">COMPANY</a></li>
+                  <li><a href="services.html">WHAT WE DO</a></li>
                   <li><a href="https://help.market.envato.com/hc/en-us">HELP CENTER</a></li>
-                  <li><a href="http://themeforest.net/legal/market">TÉRMINOS Y CONDICIONES</a></li>
-                  <li><a href="contact.html">CONTACTO</a></li>
+                  <li><a href="http://themeforest.net/legal/market">TERMS OF SERVICE</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
                 </ul>
               </div>
               
               <div class="col-md-3 col-sm-3 widget">
-                <h4>POSTS RECIENTES</h4>
+                <h4>RECENT POSTS</h4>
                 <div id="post-list-footer">
 
                   <div class="post-prev-title">
@@ -1321,7 +1020,7 @@
               
               <!-- Copyright -->
               <div class="left">
-                <a class="footer-2-copy" href="https://1.envato.market/a1gQR" target="_blank">&copy; Made in Spain </a>
+                <a class="footer-2-copy" href="https://1.envato.market/a1gQR" target="_blank">&copy; HASWELL 2020</a>
               </div>
               
 
@@ -1363,35 +1062,9 @@
     <!-- OWL CAROUSEL -->    
     <script src="js/owl.carousel.min.js"></script>
     
-    <!-- BACKGROUND VIDEO -->
-    <script src="js/jquery.backgroundvideo.min.js"></script> 
-    <script>
-    // Video Init
-    $(document).ready(function(){
-        //if (!($("html").hasClass("mobile"))){
-            var videobackground = new $.backgroundVideo($('.sm-video'), {
-                "align": "centerXY",
-                "width": 1920,
-                "height": 1080,
-                "path": "video/",
-                "filename": "video_pkw", // FILE NAME of your video
-                "types": ["mp4", "webm"],
-                "autoplay": true,
-                "loop": true
-            });
-        //}
-				
-					if ($("html").hasClass("mobile")){
-						document.getElementById('video_background').play();
-					};
-    });
-    </script>
-    
     <!-- MAIN SCRIPT -->
 		<script src="js/main.js"></script>
-		
-
-		
+    
 <!-- JS end -->	
 	
 	</body>
