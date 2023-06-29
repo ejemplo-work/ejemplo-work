@@ -2607,7 +2607,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   background-repeat: no-repeat;
 }
 .sm-video-bg {
-  background-image: url(../images/static-media/video-bg.jpg);
+  /*background-image: url(../images/static-media/video-bg.jpg); */
   background-position: 50% 0px;
   background-size:cover;
   overflow: hidden;
