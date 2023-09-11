@@ -1,64 +1,82 @@
 <?php
 
-// Comprobar si se ha enviado un formulario POST
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    exit('<div class="error_message">No se ha enviado ningún formulario.</div>');
-}
 
-// Función para validar correo electrónico utilizando FILTER_VALIDATE_EMAIL
-function validate_email($email) {
-    return filter_var($email, FILTER_VALIDATE_EMAIL);
-}
 
-// Función para limpiar y escapar datos de entrada
-function sanitize_input($input) {
-    return htmlspecialchars(trim($input), ENT_QUOTES, 'UTF-8');
-}
+if(!$_POST) exit;
 
-// Recoger y validar datos de entrada
-$name = sanitize_input($_POST['name']);
-$email = sanitize_input($_POST['email']);
-$phone = sanitize_input($_POST['phone']);
-$comments = sanitize_input($_POST['comments']);
 
-// Validar campos requeridos
-if (empty($name)) {
-    exit('<div class="error_message">Debe ingresar su nombre.</div>');
-}
 
-if (empty($email) || !validate_email($email)) {
-    exit('<div class="error_message">Por favor, ingrese una dirección de correo electrónico válida.</div>');
-}
+function tommus_email_validate($email) { return filter_var($email, FILTER_VALIDATE_EMAIL) && preg_match('/@.+\./', $email); }
 
-if (empty($comments) || $comments == 'Your Message') {
-    exit('<div class="error_message">Por favor, ingrese su mensaje.</div>');
-}
 
-// Evitar enlaces y etiquetas HTML peligrosas en los comentarios
-if (stripos($comments, 'href') !== false || stripos($comments, '<a') !== false) {
-    exit('<div class="error_message">Por favor, deje los enlaces como texto plano.</div>');
-}
+$name = $_POST['name']; $email = $_POST['email']; $phone = $_POST['phone']; $comments = $_POST['comments'];
 
-// Dirección de correo electrónico de destino
+
+
+if(trim($name) == '') {
+
+	exit('<div class="error_message">You must enter your name.</div>');
+
+} else if(trim($name) == 'Name') {
+
+	exit('<div class="error_message">You must enter your name.</div>');
+
+} else if(trim($email) == '') {
+
+	exit('<div class="error_message">Please enter a valid email address.</div>');
+
+} else if(!tommus_email_validate($email)) {
+
+	exit('<div class="error_message">You have entered an invalid e-mail address.</div>');
+
+} else if(trim($comments) == 'Your Message') {
+
+	exit('<div class="error_message">Please enter your message.</div>');
+
+} else if(trim($comments) == '') {
+
+	exit('<div class="error_message">Please enter your message.</div>');
+	
+} else if( strpos($comments, 'href') !== false ) {
+
+	exit('<div class="error_message">Please leave links as plain text.</div>');
+	
+} else if( strpos($comments, '[url') !== false ) {
+
+	exit('<div class="error_message">Please leave links as plain text.</div>');
+
+} if(get_magic_quotes_gpc()) { $comments = stripslashes($comments); }
+
+
+
 $address = 'ignacio@pkwdriveclub.com';
 
-// Asunto del correo electrónico
-$e_subject = 'Ha sido contactado por ' . $name;
 
-// Cuerpo del correo electrónico
-$e_body = "Ha sido contactado por $name desde su formulario de contacto. El mensaje es el siguiente:\n\n$comments\n\n";
-$e_reply = "Puede ponerse en contacto con $name a través de su correo electrónico: $email";
 
-// Encabezados
-$headers = "From: $address\r\n";
-$headers .= "Reply-To: $email\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-type: text/plain; charset=utf-8\r\n";
+$e_subject = 'You\'ve been contacted by ' . $name . '.';
 
-// Envío del correo electrónico
-if (mail($address, $e_subject, $e_body . $e_reply, $headers)) {
-    echo '<fieldset><div id="success_page"><p>Gracias, ' . $name . ', su mensaje ha sido enviado correctamente.</p></div></fieldset>';
-} else {
-    echo '<div class="error_message">Ocurrió un error al enviar el mensaje.</div>';
-}
-?>
+$e_body = "You have been contacted by $name from your contact form, their additional message is as follows." . "\r\n" . "\r\n";
+
+$e_content = "\"$comments\"" . "\r\n" . "\r\n";
+
+$e_reply = "You can contact $name via email, $email (or by phone if supplied: $phone)";
+
+
+
+$msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
+
+
+
+$headers = "From: $email" . "\r\n";
+
+$headers .= "Reply-To: $email" . "\r\n";
+
+$headers .= "MIME-Version: 1.0" . "\r\n";
+
+$headers .= "Content-type: text/plain; charset=utf-8" . "\r\n";
+
+$headers .= "Content-Transfer-Encoding: quoted-printable" . "\r\n";
+
+
+
+if(mail($address, $e_subject, $msg, $headers)) { echo "<fieldset><div id='success_page'><p>Thank you $name, your message has been submitted to us.</p></div></fieldset>"; }
