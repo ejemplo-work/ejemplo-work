@@ -1280,6 +1280,78 @@ h4.panel-title {
 	left: 0;
 	top: 0;
 }
+
+.background-image4 {
+	background: url(../images/malagueta/malgueta.jpg) no-repeat center;
+	height: 100%;
+	display: block;
+	width: 100%;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.background-image5 {
+	background: url(../images/neptuno/neptuno.jpg) no-repeat center;
+	height: 100%;
+	display: block;
+	width: 100%;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.background-image6 {
+	background: url(../images/albayzin/albayzin.jpg) no-repeat center;
+	height: 100%;
+	display: block;
+	width: 100%;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.background-image7 {
+	background: url(../images/castellana/castellana.jpg) no-repeat center;
+	height: 100%;
+	display: block;
+	width: 100%;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
 .banner-textblock {
 	position: relative;
 }
