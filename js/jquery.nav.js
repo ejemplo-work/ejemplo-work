@@ -19,6 +19,7 @@
 
 ;(function($, window, document, undefined){
 
+'use strict';
 	// our plugin constructor
 	var OnePageNav = function(elem, options){
 		this.elem = elem;
@@ -36,20 +37,20 @@
 	OnePageNav.prototype = {
 		defaults: {
 			navItems: 'a',
-			currentClass: 'current',
+			currentClass: 'active',
 			changeHash: false,
 			easing: 'swing',
 			filter: '',
-			scrollSpeed: 750,
-			scrollThreshold: 0.5,
-			begin: false,
-			end: false,
+			scrollSpeed: 700,
+			scrollThreshold: 0.1,
+			begin: true,
+			end: true,
 			scrollChange: false
 		},
 
 		init: function() {
 			// Introduce defaults that can be extended either
-			// globally or using an object lightral.
+			// globally or using an object literal.
 			this.config = $.extend({}, this.defaults, this.options, this.metadata);
 
 			this.$nav = this.$elem.find(this.config.navItems);
@@ -199,10 +200,10 @@
 		},
 
 		scrollTo: function(target, callback) {
-			var offset = $(target).offset().top;
+	//		var offset = $(target).offset().top;
 
 			$('html, body').animate({
-				scrollTop: (offset - this.config.scrollOffset)
+	//			scrollTop: offset
 			}, this.config.scrollSpeed, this.config.easing, callback);
 		},
 
@@ -221,3 +222,19 @@
 	};
 
 })( jQuery, window , document );
+
+
+
+$('a.scroller').on('click', function()
+{  'use strict';
+   var the_id = $(this).attr("href");  
+   $('html, body').animate(
+   {  
+      scrollTop:$(the_id).offset().top + 1          
+   }, 'slow');  
+   return false;  
+});  
+
+
+
+
