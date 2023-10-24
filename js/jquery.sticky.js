@@ -11,8 +11,6 @@
 //       might need to adjust the width in some cases.
 
 (function($) {
-		  'use strict';
-		  
   var defaults = {
       topSpacing: 0,
       bottomSpacing: 0,
@@ -129,26 +127,3 @@
     setTimeout(scroller, 0);
   });
 })(jQuery);
-
-
-$(document).ready(function(){
-	
-	$("header").sticky({topSpacing:0});
-	navHeight();
-});
-
-$(window).resize(function(){
-	
-	navHeight();
-});
-
-function navHeight(){
-	var ww = $(window).width();
-	var wh = $(window).height();
-	
-	if( ww < 768 && wh < ww ){
-		$('#nav').height( wh - 109 );
-	}else if( wh > ww ){
-		$('#nav').height( 'auto' );
-	}
-}
