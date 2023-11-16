@@ -1,1105 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+        <!-- META INFO -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!-- PAGE TITLE -->
+        <title>CKav | Dext HTML Creative Template</title>
+    
+        <!-- META KEYWORDS AND DESCRIPTION -->
+        <meta name="keywords" content="HTML5 Template, one page template, leanding page, themeforest template, ckavart, ckav, template, multipurpose template" />
+        <meta name="description" content="Dext HTML Creative Template">
+        <meta name="author" content="CKav">
+    
+        <!-- META VIEW PORT -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    
+        <!-- FAVICONS -->
+        <link rel="icon" href="images/favicons/favicon.ico">
+        <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    
+        <!-- WEB FONT-FAMILY -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    
+        <!-- VENDOR FONT ICONS CSS -->
+        <link rel="stylesheet" href="fonticons/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="fonticons/et-line/et-line-font.css">
+        <link rel="stylesheet" href="fonticons/material-webfont/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="fonticons/pixeden/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="fonticons/simplelineicons/css/simple-line-icons.css">
+    
+        <!-- COMMON VENDOR CSS -->
+        <link rel="stylesheet" href="vendor/animate-css/animate.min.css">
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/sweetalert/sweetalert2.min.css">
+        <link rel="stylesheet" href="vendor/jarallax/jarallax.css">
+        <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+        
+        <!-- PAGE SPECIFIC VENDOR CSS -s->
+        <link rel="stylesheet" href="vendor/snow3d/snow-effect.css">
+    
+        <!-- TEMPLATE COMMON CSS -->
+        <link rel="stylesheet" href="css/ckav-main.css">
+        <link rel="stylesheet" href="css/ckav-elements.css">
+        <link rel="stylesheet" href="css/ckav-helper.css">
+        <link rel="stylesheet" href="css/ckav-responsive.css">
+    
+        <!-- DEMO SPECIFIC TEMPLATE CSS -->
+    
+        <!-- TEMPLATE THEME CSS -->
+    
+        <!-- TEMPLATE USER CUSTOM CSS -->
+        <link rel="stylesheet" href="css/template-custom.css">
+    </head>
+    
+<body class="ckav-body tooltip-light" onload="init()">
 
-    <title>Webdevco</title> 
-
-    <!-- mobile responsive meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="images/fav-icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="images/fav-icon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/fav-icon/favicon-16x16.png" sizes="16x16">
-
-</head>
-<body>
-
-<div class="boxed_wrapper">
-
-<header class="top-bar">
-    <div class="container">
-        <div class="clearfix">
-            <div class="col-left float_left">
-                <div id="polyglotLanguageSwitcher" class="">
-                    <form action="#">
-                        <select id="polyglot-language-options">
-                            <option id="en" value="en" selected>English</option>
-                            <!--<option id="fr" value="fr">French</option>
-                            <option id="de" value="de">German</option>
-                            <option id="it" value="it">Italian</option>
-                            <option id="es" value="es">Spanish</option>-->
-                        </select>
-                    </form>
-                </div>
-
-                <ul class="top-bar-info">
-                    <!--<li><i class="icon-technology"></i>Phone: (123) 0200 12345</li>-->
-                    <li><i class="icon-note2"></i>info@webdevco.io</li>
-                </ul>
-            </div>
-            <div class="col-right float_right">
-                <ul class="social">
-                    <li>Stay Connected: </li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                </ul>
-                <div class="link">
-                    <a href="#contact" class="thm-btn">get a quote</a>
-                </div>
-            </div>
-                
-                
+    <!--
+    ************************************************************
+    * PAGE LOADER
+    *************************************************************
+    -->
+    <div id="loader">
+        <div class="load-three-bounce">
+            <div class="load-child bounce1"></div>
+            <div class="load-child bounce2"></div>
+            <div class="load-child bounce3"></div>
         </div>
-            
-
     </div>
-</header>
+    <!-- ************** END : PAGE LOADER **************  -->
 
-<section class="theme_menu stricky">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="main-logo">
-                    <a href="index.html"><img src="images/logo/logo1.png" alt=""></a>
+
+    <div class="ckav-body">
+
+        <!--
+        ************************************************************
+        * COMMON IN ALL
+        *************************************************************
+        -->
+        <div class="common-section">
+
+            <!--=================================
+            = HEADER
+            ==================================-->
+            <header class="header-section">
+                <div class="container-fluid padding-0">
+                    <div class="row align-items-center">
+
+                        <!-- LOGO -->
+                        <div class="col-2">
+                            <a href="#" class="logo-link">
+                                <img class="logo-image margin-t-30 margin-l-30" src="images/logo.png" alt="ckav" data-ckav-smd="margin-tb-10 margin-l-20">
+                            </a>
+                        </div>
+
+                        <!-- NAVIGATION -->
+                        <div class="col flex-cr display-none" data-ckav-smd="display-flex">
+                            <div class="menu-icon-wrp margin-r-30" data-ckav-smd="margin-r-20 margin-t-10">
+                                <div class="menu-icon">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-8 menu-column">
-                <nav class="menuzord" id="main_menu">
-                   <ul class="menuzord-menu">
-                        <li class="active"><a href="index.html">Home</a></li>
+            </header>
+            <!-- ======= END : HEADER =======  -->
 
-                        <li><a href="#about">About us</a>
-                        <!--<ul class="dropdown">
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="team.html">Meet Our Team</a></li>
-                            <li><a href="faq.html">FAQ’s</a></li>
-                            <li><a href="testimonials.html">Client Feedback</a></li>
-                         </ul>-->
+            <!--=================================
+            = NAVIGATION
+            ==================================-->
+            <div class="navigation-section flex-cc">
+                <div class="inner-wrapper">
+                    <ul class="navigation-ul">
+                        
+                        <li class="navigation-li">
+                            <a href="#" class="navigation-a section-to" data-page-section="#subscribe">
+                                <span class="text-line-wrp">
+                                    <span class="text">Subscribe</span>
+                                    <span class="line"></span>
+                                </span>
+                                <span class="icon iconwrp square-40"><i class="pe-7s-bell"></i></span>
+                            </a>
                         </li>
 
-                        <li><a href="#services">services</a>
-                        <!--<ul class="dropdown">
-                            <li><a href="service-1.html">Business Growth</a></li>
-                            <li><a href="service-2.html">Sustainability</a></li>
-                            <li><a href="service-3.html">Performance</a></li>
-                            <li><a href="service-4.html">Advanced Analytics</a></li>
-                            <li><a href="service-5.html">Organization</a></li>
-                            <li><a href="service-6.html">Customer Insights</a></li>
-                         </ul>-->
-                            
-                        </li>
-
-                        <!--<li><a href="#">Projects</a>
-                        <ul class="dropdown">
-                            <li><a href="project-1.html">Projects 4 Columns</a></li>
-                            <li><a href="project-2.html">Projects 3 Columns</a></li>
-                            <li><a href="project-3.html">Projects 2 Columns</a></li>
-                            <li><a href="project-single.html">Single Project</a></li>
-                         </ul>
-                        </li>
-
-                        <li><a href="#">blog</a>
-                        <ul class="dropdown">
-                            <li><a href="blog-grid.html">Blog Grid View</a></li>
-                            <li><a href="blog-large.html">Blog With Sidebar</a></li>
-                            <li><a href="blog-details.html">Blog Single Post</a></li>
-                         </ul>
-                        </li>
-
-
-                        <li><a href="#">Shop</a>
-                        <ul class="dropdown">
-                            <li><a href="shop.html">Shop Products</a></li>
-                            <li><a href="shop-single.html">Product Detail Page</a></li>
-                            <li><a href="shop-cart.html">View Shopping Items</a></li>
-                            <li><a href="checkout.html">Checkout Your Page</a></li>
-                            <li><a href="account.html">Login or Register</a></li>
-                        </ul>
-                        </li>-->
-                      
-                        <li><a href="#contact">Contact us</a></li>
-                    </ul>
-                    
-                    <!-- End of .menuzord-menu -->
-
-                </nav> 
-                <!-- End of #main_menu -->
-            </div>
-
-
-            <!--<div class="right-column">
-                <div class="right-area">
-                    <div class="nav_side_content">
-                        <div class="search_option">
-                            <button class="search tran3s dropdown-toggle color1_bg" id="searchDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></button>
-                            <form action="#" class="dropdown-menu" aria-labelledby="searchDropdown">
-                                <input type="text" placeholder="Search...">
-                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
-                            </form>
-                       </div>
-                   </div>
-                </div>
-                    
-            </div>
-        </div>-->
-                
-
-   </div> <!-- End of .conatiner -->
-</section>
-  
-<section class="rev_slider_wrapper">
-    <div id="slider1" class="rev_slider"  data-version="5.0">
-        <ul>
-            
-            <li data-transition="fade">
-                <img src="images/1.jpeg"  alt="" width="1920" height="683" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
-                
-                <div class="tp-caption tp-resizeme"
-                    data-x="right" data-hoffset="0" 
-                    data-y="center" data-voffset="0" 
-                    data-transform_idle="o:1;"         
-                    data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
-                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
-                    data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
-                    data-splitin="none" 
-                    data-splitout="none"  
-                    data-responsive_offset="on"
-                    data-start="500">
-                    <div class="slide-content-box">
-                        <h1>Business Coaching <br>and consulting </h1>
-                        <p>With over few years of experience helping businesses to find <br>comprehensive solutions.  </p>
-                    </div>
-                </div>
-                <div class="tp-caption tp-resizeme" 
-                    data-x="left" data-hoffset="632" 
-                    data-y="center" data-voffset="165" 
-                    data-transform_idle="o:1;"                         
-                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"                     
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-responsive_offset="on"
-                    data-start="2300">
-                    <div class="slide-content-box">
-                        <div class="button">
-                            <a class="thm-btn-tr" href="#">OUR COMPANY</a>     
-                        </div>
-                    </div>
-                </div>
-                <div class="tp-caption tp-resizeme" 
-                    data-x="left" data-hoffset="837" 
-                    data-y="center" data-voffset="165" 
-                    data-transform_idle="o:1;"                         
-                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"                     
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-responsive_offset="on"
-                    data-start="2600">
-                    <div class="slide-content-box">
-                        <div class="button">
-                            <a class="thm-btn" href="#contact">CONTACT US</a>     
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li data-transition="fade">
-                <img src="images/1.jpeg"  alt="" width="1920" height="683" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
-                
-                <div class="tp-caption tp-resizeme" 
-                    data-x="center" data-hoffset="0" 
-                    data-y="center" data-voffset="-60" 
-                    data-transform_idle="o:1;"                         
-                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"                     
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-responsive_offset="on"
-                    data-start="100">
-                    <div class="img-box center">
-                        <img src="images/slider/logo1.png" alt="">
-                    </div>
-                </div>
-                <div class="tp-caption tp-resizeme"
-                    data-x="center" data-hoffset="" 
-                    data-y="center" data-voffset="30" 
-                    data-transform_idle="o:1;"         
-                    data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
-                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
-                    data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
-                    data-splitin="none" 
-                    data-splitout="none"  
-                    data-responsive_offset="on"
-                    data-start="500">
-                    <div class="slide-content-box center">
-                        <h1>Your Growth is Our Target</h1>
-                        <p>With years of experience helping businesses to find <br>comprehensive solutions.  </p>
-                    </div>
-                </div>
-                <div class="tp-caption tp-resizeme" 
-                    data-x="center" data-hoffset="0" 
-                    data-y="center" data-voffset="160" 
-                    data-transform_idle="o:1;"                         
-                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"                     
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-responsive_offset="on"
-                    data-start="1500">
-                    <div class="slide-content-box">
-                        <div class="button">
-                            <a class="thm-btn-tr" href="#testimonials">Testimonials</a>     
-                        </div>
-                    </div>
-                </div>
-
-            </li>
-            
-            <li data-transition="fade">
-                <img src="images/1.jpeg"  alt="" width="1920" height="683" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
-                
-                <div class="tp-caption  tp-resizeme" 
-                    data-x="left" data-hoffset="15" 
-                    data-y="top" data-voffset="240" 
-                    data-transform_idle="o:1;"         
-                    data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
-                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
-                    data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
-                    data-splitin="none" 
-                    data-splitout="none"
-                    data-responsive_offset="on"
-                    data-start="700">
-                    <div class="slide-content-box">
-                        <h1>Looking for first class <br>business plan?</h1>
-                        <p>With over few years of experience helping businesses to find <br>comprehensive solutions. </p>
-                    </div>
-                </div>
-                <div class="tp-caption tp-resizeme" 
-                    data-x="left" data-hoffset="15" 
-                    data-y="top" data-voffset="470" 
-                    data-transform_idle="o:1;"                         
-                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"                     
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-responsive_offset="on"
-                    data-start="2300">
-                    <div class="slide-content-box">
-                        <div class="button">
-                            <a class="thm-btn-tr" href="#">our company</a>     
-                        </div>
-                    </div>
-                </div>
-                <div class="tp-caption tp-resizeme" 
-                    data-x="left" data-hoffset="225" 
-                    data-y="top" data-voffset="470" 
-                    data-transform_idle="o:1;"                         
-                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"                     
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-responsive_offset="on"
-                    data-start="2600">
-                    <div class="slide-content-box">
-                        <div class="button">
-                            <a class="thm-btn" href="#contact">contact us</a>     
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-</section>
-
-
-
-<section class="feature-service sec-padd2" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12 column style-1">
-                <div class="section-title">
-                    <h3>About Experts</h3>
-                </div>
-                <figure class="img-box">
-                    <a href="#"><img src="images/foto-1.jpeg" alt=""></a>
-                </figure>
-                <div class="text">
-                    <p>We have built an enviable reputation in the consumer goods, heavy industry, high-tech, manufacturing, medical, recreational vehicle, and our transportation sectors. multidisciplinary team of experts.</p>
-                </div>
-                <!--<div class="link"><a href="#" class="thm-btn-tr style-2">Know More</a></div>-->
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 column style-2">
-                <div class="section-title">
-                    <h2>What We Do</h2>
-                </div>
-                <div class="content">
-                    <div class="text">
-                        <p>We are experts in this field with over few years <br>experience. What that means is you are going to <br>get right solution. Find our services.</p>
-                    </div>
-                    <ul class="list">
-                        <li><a href="#"><i class="fa fa-check-circle-o"></i>Business Growth</a></li>
-                        <li><a href="#"><i class="fa fa-check-circle-o"></i>Sustainability</a></li>
-                        <li><a href="#"><i class="fa fa-check-circle-o"></i>Performance</a></li>
-                        <li><a href="#"><i class="fa fa-check-circle-o"></i>Advanced Analytics</a></li>
-                        <li><a href="#"><i class="fa fa-check-circle-o"></i>Customer Insights</a></li>
-                        <li><a href="#"><i class="fa fa-check-circle-o"></i>Organization</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 column style-3">
-                <div class="section-title">
-                    <h2>Business Growth</h2>
+            <!-- ======= END : NAVIGATION =======  -->
+
+            <!--=================================
+            = SOCIAL LINKS
+            ==================================-->
+            <div class="social-section">
+                <div class="inner-wrapper">
+                    <a href="#" class="button button-icon margin-r-10 color-button-white border-glass"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="button button-icon margin-r-10 color-button-white border-glass"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="button button-icon margin-r-10 color-button-white border-glass"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="button button-icon margin-r-10 color-button-white border-glass"><i class="fab fa-dribbble"></i></a>
                 </div>
-                <div class="graph">
-                    <figure class="graph-img"><img src="images/foto-2.jpeg" alt=""></figure>
-                    <form action="#" class="default-form">
-                        <!--<div class="select-box">
-                            <select class="text-capitalize selectpicker form-control required" name="form_subject" data-style="g-select" data-width="100%">
-                                <option>Last 6 Months</option>
-                                <option>Last 7 Months</option>
-                                <option>Last 8 Months</option>
-                                <option>Last 9 Months</option>
-                            </select>
-                        </div>-->
-                    </form>
-                        
+            </div>
+            <!-- ======= END : SOCIAL LINKS =======  -->
+
+        </div>
+        <!-- ************** END : COMMON IN ALL **************  -->
+
+        <!--
+        ************************************************************
+        * INTRO SECTION [ MAIN SECTION ]
+        *************************************************************
+        -->        
+        <div class="main-section intro-section flex-cc typo-light" data-ckav-smd="position-rel">
+
+            <div class="container zindex-2">
+                <div class="intro-text width-40" data-ckav-smd="width-100 align-center">
+
+
+                    <script type="text/javascript"
+         src="https://www.covermanager.com/js/iframeResizer.min.js"></script>
+
+      </script><iframe id="restaurante-negrocarbon-castellana" title="Reservas"
+         src="https://www.covermanager.com/reservation/module_restaurant/restaurante-negrocarbon-castellana/spanish"
+          frameborder="0" height="550" width="80%" onload="iFrameResize();"></iframe>
+
+          <!--
+                    <h2 class="heading xxlarge bold-600 margin-b-25" data-ckav-smd="large">Yeh<br data-ckav-smd="display-none">It's Snow</h2>
+                    <p class="heading-sub mini bold-300" data-ckav-smd="mini margin-b-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem asperiores delectus quas deserunt aliquid illo quos dignissimos culpa</p>
+                    <a href="https://themeforest.net/user/c-kav/portfolio" class="button color-button-white button-large margin-t-40 solid">More Info</a>-->
                 </div>
             </div>
             
+            <!--=================================
+            = BACKGROUND HOLDER
+            ==================================-->
+            <div class="bg-holder zindex-0 position-fixed" data-ckav-smd="position-rel">
+                
+                <!-- OVERLAY -->
+                <b data-bgholder="overlay" class="full-wh zindex-3" data-lgradient="y" data-radial-gradient="rgba(0,0,0, 0.0)|rgba(0,0,0, 0.0)"></b>
+
+                <!-- SNOW EFFECT -->
+                <div id="snow-wrp" class="full-wh zindex-3"></div>
+                
+                <!-- BACKGROUND IMAGE -->
+                <b data-bgholder="background-image" class="full-wh bg-cover bg-cc zindex-1" data-bg-image="images/grupo.jpg"></b>
+                
+            </div>
+            <!-- ======= END : BACKGROUND HOLDER =======  -->
+
         </div>
-    </div>
-</section>
+        <!-- ************** END : INTRO SECTION [ MAIN SECTION ] **************  -->
 
-
-<!--
-<section  class="service sec-padd2">
-    <div class="container">
         
-        <div class="section-title">
-            <h2>Our Services</h2>
-        </div>
+        <!--
+        ************************************************************
+        * PAGE SECTION
+        *************************************************************
+        -->
         
-        <div class="service_carousel">
-            <!--Featured Service -s->
-            <article class="single-column">
-                <div class="item">
-                    <figure class="img-box">
-                        <img src="images/service/1.jpg" alt="">
-                        <figcaption class="default-overlay-outer">
-                            <div class="inner">
-                                <div class="content-layer">
-                                    <a href="service-1.html" class="thm-btn thm-tran-bg">read more</a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="content center">
-                        <h5>Service #1</h5>
-                        <a href="service-1.html"><h4>Business Growth</h4></a>
-                        <div class="text">
-                            <p>The process of improving some of <br>our an enterprise's success. Business <br>growth can be a achieved.</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <!--Featured Service -s->
-            <article class="single-column">
-                <div class="item">
-                    <figure class="img-box">
-                        <img src="images/service/2.jpg" alt="">
-                        <figcaption class="default-overlay-outer">
-                            <div class="inner">
-                                <div class="content-layer">
-                                    <a href="service-2.html" class="thm-btn thm-tran-bg">read more</a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="content center">
-                        <h5>Service #2</h5>
-                        <a href="service-2.html"><h4>Sustainability</h4></a>
-                        <div class="text">
-                            <p>When it comes to sustainability & <br>corporate responsibility, we believe <br>thenormal rules of business.</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <!--Featured Service -s->
-            <article class="single-column">
-                <div class="item">
-                    <figure class="img-box">
-                        <img src="images/service/3.jpg" alt="">
-                        <figcaption class="default-overlay-outer">
-                            <div class="inner">
-                                <div class="content-layer">
-                                    <a href="service-3.html" class="thm-btn thm-tran-bg">read more</a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="content center">
-                        <h5>Service #3</h5>
-                        <a href="service-3.html"><h4>Performance</h4></a>
-                        <div class="text">
-                            <p>In a contract, performance deemed <br> to be the fulfillment of an obligation <br>in a manner that releases.</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <!--Featured Service -s->
-            <article class="single-column">
-                <div class="item">
-                    <figure class="img-box">
-                        <img src="images/service/4.jpg" alt="">
-                        <figcaption class="default-overlay-outer">
-                            <div class="inner">
-                                <div class="content-layer">
-                                    <a href="service-4.html" class="thm-btn thm-tran-bg">read more</a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="content center">
-                        <h5>Service #4</h5>
-                        <a href="service-5.html"><h4>Organization</h4></a>
-                        <div class="text">
-                            <p>We help business improve financial <br>performaance by ensuring the entire <br>organization system is aligned.</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            
-        </div>
-            
+
     </div>
-</section>
--->
-
-<section id="services" class="fact-counter sec-padd" style="background-image: url(images/1.jpeg);">
-    <div class="container">
-        <div class="row clearfix">
-            <div class="counter-outer clearfix">
-                <!--Column-->
-                <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
-                    <div class="item">
-                        <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="107">0</span></div>
-                        <h4 class="counter-title">Experienced Consultants</h4>
-                        <div class="icon"><i class="icon-people3"></i></div>
-                    </div>
-                        
-                </article>
-                
-                <!--Column-->
-                <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
-                    <div class="item">
-                        <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="59">0</span></div>
-                        <h4 class="counter-title">Sucessfull Projects</h4>
-                        <div class="icon"><i class="icon-technology3"></i></div>
-                    </div>
-                </article>
-                
-                <!--Column-->
-                <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
-                    <div class="item">
-                        <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="7">0</span></div>
-                        <h4 class="counter-title">Winning Awards</h4>
-                        <div class="icon"><i class="icon-sports"></i></div>
-                    </div>
-                </article>
-                
-                <!--Column-->
-                <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
-                    <div class="item">
-                        <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="100">0</span>%</div>
-                        <h4 class="counter-title">Satisfied Customers</h4>
-                        <div class="icon"><i class="icon-square2"></i></div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="whychoos-us sec-padd2">
-    <div class="container">
-        
-        <div class="section-title center">
-            <h2>Why Choosing Webdevco</h2>
-            <div class="text">
-                <p>We are experts in this industry with over few years experience. What that means is you are going to get right <br> solution. Find our services.</p>
-            </div>
-        </div>
-            
-        
-        <div class="row clearfix">
-            <!--Featured Service -->
-            <article class="column col-md-4 col-sm-6 col-xs-12">
-                <div class="item">
-                    <div class="icon_box">
-                        <span class="icon-graphic2"></span>
-                    </div>
-                    <a href="#"><h4>Application Development Consulting Billing</h4></a>
-                    <div class="text">
-                        <p>Our team of experts provides invaluable guidance throughout the application development lifecycle. Whether you're starting a new project or optimizing an existing one, we will make your digital dreams a reality.</p>
-                    </div>
-                    <div class="count">01</div>
-                </div>
-            </article>
-            <!--Featured Service -->
-            <article class="column col-md-4 col-sm-6 col-xs-12">
-                <div class="item">
-                    <div class="icon_box">
-                        <span class="icon-layers"></span>
-                    </div>
-                    <a href="#"><h4>Testing service billing</h4></a>
-                    <div class="text">
-                        <p>Quality and performance are our priorities. Our testing services cover functional, performance, security, and more to ensure your applications are robust and reliable. Trust us to help you deliver error-free solutions.</p>
-                    </div>
-                    <div class="count">02</div>
-                </div>
-            </article>
-            <!--Featured Service -->
-            <article class="column col-md-4 col-sm-6 col-xs-12">
-                <div class="item">
-                    <div class="icon_box">
-                        <span class="icon-computer"></span>
-                    </div>
-                    <a href="#"><h4>Digital marketing service billing</h4></a>
-                    <div class="text">
-                        <p>In the competitive digital landscape, a strong online presence is essential. Our digital marketing services are tailored to your unique needs, helping you connect with your target audience and drive business growth.<br><br></p>
-                    </div>
-                    <div class="count">03</div>
-                </div>
-            </article>
-            
-        </div>
-            
-    </div>
-</section>
-
-
-
-
-<div class="container"><div class="border-bottom"></div></div>
-
-<section id="testimonials" class="testimonials-section sec-padd">
-    <div class="container">
-        <div class="section-title center">
-            <h2>testimonials</h2>
-        </div> 
-        
-        <!--Slider-->      
-        <div class="testimonials-slider column-carousel three-column">
-            
-            <!--Slide-->
-            <article class="slide-item">
-                <div class="quote"><span class="icon-left"></span></div>
-                <div class="author">
-                    <div class="img-box">
-                        <a href="#"><img src="images/2.jpeg" alt=""></a>
-                    </div>
-                    <h4>Jenifer Hearly</h4>
-                    <a href="#"><p>New York</p></a>
-                    <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-                </div>
-                
-                <div class="slide-text">
-                    <p>Webdevco has helped us to just have a better handle on everything in our business – to actually make decisions and move forward to grow.</p>
-                </div>
-            </article>
-            
-            <!--Slide-->
-            <article class="slide-item">
-                <div class="quote"><span class="icon-left"></span></div>
-                <div class="author">
-                    <div class="img-box">
-                        <a href="#"><img src="images/3.jpeg" alt=""></a>
-                    </div>
-                    <h4>Mitchel Harward</h4>
-                    <a href="#"><p>San Fransisco</p></a>
-                    <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-                </div>
-                
-                <div class="slide-text">
-                    <p>They bring a wealth of knowledge as well as a personal touch so often missing from other firms, helped us to just have better handle on everything.</p>
-                </div>
-            </article>
-            
-            <!--Slide-->
-            <article class="slide-item">
-                <div class="quote"><span class="icon-left"></span></div>
-                <div class="author">
-                    <div class="img-box">
-                        <a href="#"><img src="images/4.jpeg" alt=""></a>
-                    </div>
-                    <h4>Beally Russel</h4>
-                    <a href="#"><p>New York</p></a>
-                    <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-                </div>
-                
-                <div class="slide-text">
-                    <p>It involves an examination of operations which allows their team discuss the art of the possible. They bring a wealth of knowledge, we believe Webdevco.</p>
-                </div>
-            </article>
-
-     
-        </div>
-        
-    </div>    
-</section>
-
-<!--<section class="latest-project sec-padd">
-    <div class="container">
-        <div class="section-title">
-            <h2>Latest Projects</h2>
-        </div>
-        <div class="latest-project-carousel">
-            <div class="item">
-                <div class="single-project">
-                    <figure class="imghvr-shutter-in-out-horiz">
-                        <img src="images/resource/4.jpg" alt="Awesome Image"/>
-                        <figcaption>
-                            <div class="content">
-                                <a href="project-single.html"><h4>Latest Technology</h4></a>
-                                <p>Consulting</p>
-                            </div> 
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="item">
-                <div class="single-latest-project-carousel">
-                    <div class="single-project">
-                    <figure class="imghvr-shutter-in-out-horiz">
-                        <img src="images/resource/5.jpg" alt="Awesome Image"/>
-                        <figcaption>
-                            <div class="content">
-                                <a href="project-single.html"><h4>Audit & Assurance</h4></a>
-                                <p>Financial</p>
-                            </div>    
-                        </figcaption>
-                    </figure>
-                </div>
-                </div><!-- /.single-latest-project-carousel -s->
-            </div>
-            <div class="item">
-                <div class="single-latest-project-carousel">
-                    <div class="single-project">
-                    <figure class="imghvr-shutter-in-out-horiz">
-                        <img src="images/resource/6.jpg" alt="Awesome Image"/>
-                        <figcaption>
-                            <div class="content">
-                                <a href="project-single.html"><h4>Business Growth</h4></a>
-                                <p>Growth</p>
-                            </div> 
-                        </figcaption>
-                    </figure>
-                </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="single-latest-project-carousel">
-                    <div class="single-project">
-                    <figure class="imghvr-shutter-in-out-horiz">
-                        <img src="images/resource/7.jpg" alt="Awesome Image"/>
-                        <figcaption>
-                            <div class="content">
-                                <a href="project-single.html"><h4>Transporation Service</h4></a>
-                                <p>Marketing</p>
-                            </div> 
-                        </figcaption>
-                    </figure>
-                </div>
-                </div>
-            </div>            
-        </div>
-                
-    </div>
-</section>
-
-<section class="blog-section sec-padd2">
-    <div class="container">
-        <div class="section-title center">
-            <h2>latest news</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="images/blog/1.jpg" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">21 <br>April</div>
-                        <h4><a href="blog-details.html">Retail banks wake up to digital</a></h4>
-                        <div class="post-meta">by fletcher  |  14 Comments</div>
-                        <div class="text">
-                            <p>know how to pursue pleasure rationally seds encounter consequences.</p>               
-                        </div>
-                        <div class="link">
-                            <a href="blog-details.html" class="default_link">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        
-                    </div>
-                </div>
-                
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="images/blog/2.jpg" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">17 <br>June</div>
-                        <h4><a href="blog-details.html">Improve your business growth</a></h4>
-                        <div class="post-meta">by Richards  |  22 Comments</div>
-                        <div class="text">
-                            <p>Great pleasure to take a trivial example, which of us undertakes laborious.</p>                            
-                        </div>
-                        <div class="link">
-                            <a href="blog-details.html" class="default_link">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        
-                    </div>
-                </div>
-                
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="images/blog/3.jpg" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">14 <br>Mar</div>
-                        <h4><a href="blog-details.html">Save money for your future.</a></h4>
-                        <div class="post-meta">by Vincent  |  16 Comments</div>
-                        <div class="text">
-                            <p>Pleasure and praising pain was born and I will give you a complete account.</p>                            
-                        </div>
-                        <div class="link">
-                            <a href="blog-details.html" class="default_link">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        
-                    </div>
-                </div>
-                
-            </div>
-            
-        </div>
-    </div>
-</section>-->
-
-
-
-<section id="contact" class="clients-section sec-padd">
-    <div class="container">
-        <div class="section-title">
-            <h2>our partners</h2>
-        </div>
-        <div class="client-carousel owl-carousel owl-theme">
-
-            <div class="item tool_tip" title="">
-                <img src="images/logo-1.png" alt="Awesome Image">
-            </div>
-            <div class="item tool_tip" title="">
-                <img src="images/logo-2.png" alt="Awesome Image">
-            </div>
-            <div class="item tool_tip" title="">
-                <img src="images/logo-3.png" alt="Awesome Image">
-            </div>
-            <div class="item tool_tip" title="">
-                <img src="images/logo-4.png" alt="Awesome Image">
-            </div>
-            <div class="item tool_tip" title="">
-                <img src="images/logo-5.png" alt="Awesome Image">
-            </div>
-
-        </div>
-    </div>  
-</section>
-
-
-
-<section class="contact_us sec-padd-bottom">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="section-title">
-                    <h3>Send Your Message Us</h3>
-                </div>
-                <div class="default-form-area">
-                    <form id="contact-form" name="contact_form" class="default-form" action="inc/sendmail.php" method="post">
-                        <div class="row clearfix">
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                
-                                <div class="form-group">
-                                    <input type="text" name="form_name" class="form-control" value="" placeholder="Your Name *" required="">
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="form-group">
-                                    <input type="email" name="form_email" class="form-control required email" value="" placeholder="Your Mail *" required="">
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="form-group">
-                                    <input type="text" name="form_phone" class="form-control" value="" placeholder="Phone">
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="form-group">
-                                    <input type="text" name="form_subject" class="form-control" value="" placeholder="Subject">
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="form-group">
-                                    <textarea name="form_message" class="form-control textarea required" placeholder="Your Message...."></textarea>
-                                </div>
-                            </div>   
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="form-group">
-                                    <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
-                                    <button class="thm-btn2" type="submit" data-loading-text="Please wait...">send message</button>
-                                </div>
-                            </div>   
-
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-8 col-xs-12">
-                <div class="home-google-map">
-                    <div 
-                        class="google-map" 
-                        id="contact-google-map" 
-                        data-map-lat="40.938541" 
-                        data-map-lng="-73.904893" 
-                        data-icon-path="images/logo/map-marker.png"
-                        data-map-title="Chester"
-                        data-map-zoom="11" >
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="call-out">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-12">
-                <figure class="logo">
-                    <a href="index.html"><img src="images/logo/logo22.png" alt=""></a>
-                </figure>
-            </div>
-            <div class="col-md-9 col-sm-12">
-                <div class="float_left">
-                    <h4>Over few years of experience we’ll ensure you get the best guidance.</h4>
-                </div>
-                <div class="float_right">
-                    <a href="#contact" class="thm-btn-tr">Request Quote</a>
-                </div>
-            </div>
-        </div>
-                
-    </div>
-</div>
-
-<footer class="main-footer">
     
-    <!--Widgets Section-->
-    <div class="widgets-section">
-        <div class="container">
-            <div class="row">
-                <!--Big Column-->
-                <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                    <div class="row clearfix">
-                        
-                        <!--Footer Column-->
-                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                            <div class="footer-widget about-widget">
-                                <h3 class="footer-title">About Us</h3>
-                                
-                                <div class="widget-content">
-                                    <div class="text"><p>Webdevco consulting over few years of experience we’ll ensure you always get the best guidance. We serve a clients at every level of their organization, in whatever capacity we can be most useful, whether as a trusted advisor.</p> </div>
-                                    <!--<div class="link">
-                                        <a href="#" class="default_link">More About us <i class="fa fa-angle-right"></i></a>
-                                    </div>-->
-                                </div>
-                            </div>
-                        </div>
-                        <!--Footer Column-->
-                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                            <div class="footer-widget links-widget">
-                                <h3 class="footer-title">Our Services</h3>
-                                <div class="widget-content">
-                                    <ul class="list">
-                                        <li><a href="service-1.html">Business Growth</a></li>
-                                        <li><a href="service-2.html">Sustainability</a></li>
-                                        <li><a href="service-3.html">Performance</a></li>
-                                        <li><a href="service-4.html">Advanced Analytics</a></li>
-                                        <li><a href="service-5.html">Customer Insights</a></li>
-                                        <!--<li><a href="service-6.html">Organization</a></li>-->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!--Big Column-->
-                <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                    <div class="row clearfix">
-                        
+<!-- COMMON VENDOR SCRIPTS -->
+<script src="vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="vendor/jquery/jquery-migrate-3.0.0.min.js"></script>
+<!--<script src="vendor/popper/umd/popper.min.js"></script>-->
+<!--<script src="vendor/bootstrap/js/bootstrap.min.js"></script>-->
+<!--<script src="vendor/jquery-validation/jquery.validate.min.js"></script>-->
+<!--<script src="vendor/sweetalert/sweetalert2.min.js"></script>-->
+<!--<script src="vendor/jarallax/jarallax.min.js"></script>-->
+<!--<script src="vendor/owlcarousel/owl.carousel.min.js"></script>-->
+<!--<script src="vendor/swiper/js/swiper.min.js"></script>-->
+<!--<script src="vendor/jQuery-viewport-checker/jquery.viewportchecker.min.js"></script>-->
+<script src="vendor/enquire/enquire.min.js"></script>
+<!--<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>-->
+<!--<script src="vendor/isotope/imagesloaded.pkgd.min.js"></script>-->
+<!--<script src="vendor/isotope/isotope.pkgd.min.js"></script>-->
+<!--<script src="vendor/isotope/packery-mode.pkgd.min.js"></script>-->
 
-                        <!--Footer Column-->
-                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                            <div class="footer-widget contact-widget">
-                                <h3 class="footer-title">Contact us</h3>
-                                <div class="widget-content">
-                                    <ul class="contact-info">
-                                        <li><span class="icon-signs"></span>Address: Harju maakond, Tallinn, Kesklinna linnaosa,<br>
-                                             Tornimäe tn 7-26, 10145 - Estonia
-                                        </li>
-                                        <!--<li><span class="icon-phone-call"></span> Phone: +123-456-7890</li>-->
-                                        <li><span class="icon-e-mail-envelope"></span>info@webdevco.io</li>
-                                    </ul>
-                                </div>
-                                <ul class="social">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
+<!-- PAGE SPECIFIC VENDOR SCRIPTS -->
+<script src="vendor/snow3d/ThreeCanvas.js"></script>
+<script src="vendor/snow3d/Snow.js"></script>
+<script src="vendor/snow3d/snow-effect.js"></script>
 
-                        <!--Footer Column-->
-                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                            <div class="footer-widget news-widget">
-                                <h3 class="footer-title">Newsletter</h3>
-                                <div class="widget-content">
-                                    <!--Post-->
-                                    <div class="text"><p>Sign up today for hints, tips and the <br>latest product news</p></div>
-                                    <!--Post-->
-                                    <form action="#" class="default-form">
-                                        <input type="email" placeholder="Email Address">
-                                        <button type="submit" class="thm-btn">Subscribe Us</button>
-                                    </form>
-                                </div>
-                                
-                            </div>
-                        </div>                     
-                        
-                    </div>
-                </div>
-                
-             </div>
-         </div>
-     </div>
-     
-     <!--Footer Bottom-->
-     <section class="footer-bottom">
-        <div class="container">
-            <div class="pull-left copy-text">
-                <p>Copyright © 2023 All Rights Reserved.</p>
-                
-            </div><!-- /.pull-right -->
-            <div class="pull-right get-text">
-                <ul>
-                    <!--<li><a href="#">Support |  </a></li>-->
-                    <li><a href="#">Privacy & Policy |</a></li>
-                    <li><a href="#"> Terms & Conditions</a></li>
-                </ul>
-            </div><!-- /.pull-left -->
-        </div><!-- /.container -->
-    </section>
-     
-</footer>
-
-<!-- Scroll Top Button -->
-    <button class="scroll-top tran3s color2_bg">
-        <span class="fa fa-angle-up"></span>
-    </button>
-    <!-- pre loader  -->
-    <div class="preloader"></div>
+<!-- TEMPLATE COMMON SCRIPTS -->
+<script src="js/ckav-main.js"></script>
 
 
-    <!-- jQuery js -->
-    <script src="js/jquery.js"></script>
-    <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- jQuery ui js -->
-    <script src="js/jquery-ui.js"></script>
-    <!-- owl carousel js -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- jQuery validation -->
-    <script src="js/jquery.validate.min.js"></script>
-
-    <!-- mixit up -->
-    <script src="js/wow.js"></script>
-    <script src="js/jquery.mixitup.min.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
-    <script src="js/menuzord.js"></script>
-
-    <!-- revolution slider js -->
-    <script src="js/jquery.themepunch.tools.min.js"></script>
-    <script src="js/jquery.themepunch.revolution.min.js"></script>
-    <script src="js/revolution.extension.actions.min.js"></script>
-    <script src="js/revolution.extension.carousel.min.js"></script>
-    <script src="js/revolution.extension.kenburn.min.js"></script>
-    <script src="js/revolution.extension.layeranimation.min.js"></script>
-    <script src="js/revolution.extension.migration.min.js"></script>
-    <script src="js/revolution.extension.navigation.min.js"></script>
-    <script src="js/revolution.extension.parallax.min.js"></script>
-    <script src="js/revolution.extension.slideanims.min.js"></script>
-    <script src="js/revolution.extension.video.min.js"></script>
-
-    <!-- fancy box -->
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/jquery.polyglot.language.switcher.js"></script>
-    <script src="js/nouislider.js"></script>
-    <script src="js/jquery.bootstrap-touchspin.js"></script>
-    <script src="js/SmoothScroll.js"></script>
-    <script src="js/jquery.appear.js"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/jquery.flexslider.js"></script>
-    <script src="js/imagezoom.js"></script> 
-    <script id="map-script" src="js/default-map.js"></script>
-    <script src="js/custom.js"></script>
-
-</div>
-    
 </body>
 </html>
